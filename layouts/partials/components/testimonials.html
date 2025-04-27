@@ -1,0 +1,18 @@
+{{ $testimonials := slice }}
+
+{{ if .Params.testimonials }}
+  {{ $testimonials = .Params.testimonials }}
+{{ end }}
+
+<section id="testimonials" aria-labelledby="" class="bg-red text-white pt-6 pb-9 text-center">
+  <div class="container">
+    <div class="row gx-md-5 gx-xl-7">
+      {{ range first 2 $testimonials }}
+        <div class="col-md">
+          <blockquote class="fs-4"><span class="d-block display-3 mb-0">”</span><span class="d-block mt-n3">{{ .quote }}</span></blockquote>
+          <p class="small"><strong class="d-block">{{ .person }}</strong><span class="d-block">{{ .label }}</span></p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

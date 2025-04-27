@@ -1,0 +1,52 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: assets/img
+public_folder: /img
+publish_mode: editorial_workflow
+collections:
+  - label: "Footer"
+    name: "footer"
+    create: false
+    editor:
+      preview: false
+    files:
+      - label: "Footer"
+        name: "footer"
+        file: "data/footer.yml"
+        editor:
+          preview: false
+        fields:
+  - label: "Settings"
+    name: "settings"
+    create: false
+    editor:
+      preview: false
+    files:
+      - label: "Config"
+        name: "config"
+        file: "data/settings.yml"
+        editor:
+          preview: false
+        fields:
+          - { label: "Site Description", name: "description", widget: "text" }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Google Analytics ID", name: "google_analytics_id", widget: "string", required: false }
+          - label: "Site Menu"
+            name: "site_menu"
+            widget: "list"
+            fields:
+              - { label: "Menu Item", name: "menu_item", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+            required: false
+          - label: "Phone"
+            name: "phone"
+            widget: "string"
+            required: false
+          - label: "Email"
+            name: "email"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "URL", name: "url", widget: "string", required: false }

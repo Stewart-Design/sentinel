@@ -1,0 +1,13 @@
+<header id="topper" class="pt-6">
+  <div class="container">
+    <!--
+    {{ partial "breadcrumbs.html" . }}
+     -->
+    <h1 class="display-4 mb-0">{{ .Title }}</h1>
+    {{ if eq .Type "attorney" }}
+      {{ if .Params.position }}
+        <p class="h4">{{ .Params.position }}</p>
+      {{ end }}
+    {{ end }}
+  </div>
+</header>

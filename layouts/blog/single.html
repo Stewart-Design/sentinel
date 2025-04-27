@@ -1,0 +1,15 @@
+{{ define "main" }}
+  {{ partial "header.html" . }}
+  <main class="pt-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 mx-md-auto jgb-main-content lh-lg libre-baskerville-regular">
+          <div class="small mb-5">
+            {{ .Date.Format "January 2, 2006" }}
+          </div>
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </main>
+{{ end }}

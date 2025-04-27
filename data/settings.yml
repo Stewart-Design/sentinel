@@ -1,0 +1,42 @@
+description:
+featured_image: null
+google_analytics_id:
+site_menu:
+  - menu_item: Why we fight
+    url: /why-we-fight
+  - menu_item: How we help
+    url: /how-we-help
+  - menu_item: Practice areas
+    url: /practice-areas
+  - menu_item: Meet us
+    url: /meet-us
+  - menu_item: Get in touch
+    url: /get-in-touch
+practice_areas_menu:
+  - menu_item: Car Accidents
+    icon: car-burst
+    url: /practice-areas/car-accidents
+  - menu_item: Medical Malpractice
+    icon: mobile
+    url: /practice-areas/medical-malpractice
+  - menu_item: Workplace Injury
+    icon: helmet-safety
+    url: /practice-areas/workplace-injury
+  - menu_item: Wrongful Death
+    icon: person-falling-burst
+    url: /practice-areas/wrongful-death
+  - menu_item: Insurance Bad Faith
+    icon: user-hoodie
+    url: /practice-areas/insurance-bad-faith
+  - menu_item: Sexual Harassment
+    icon: triangle-exclamation
+    url: /practice-areas/sexual-harassment
+postscript:
+  heading: Get the help you deserve.
+  button_text: "Share your story–it’s totally free."
+  url:
+footer_copy:
+phone: (866) 213-2824
+email:
+  title: 
+  url: 

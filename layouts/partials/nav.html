@@ -1,0 +1,48 @@
+{{ $page := . }}
+<nav class="site-nav navbar navbar-expand-xl navbar-light bg-white">
+  <div class="w-100">
+    <div class="container position-relative bg-white">
+      <div class="px-xl-5 ms-xl-n5 me-xl-n5 bg-white">
+        <div class="row">
+          <div class="col-12 col-lg-4 d-flex align-items-lg-center">
+            <a class="navbar-brand d-inline-block py-lg-3 me-lg-0 ms-3 ms-md-0 lh-1" href="/">
+              <div class="d-flex">
+                <div class="me-2"><img src="/images/mark.webp" width="55px"></div>
+                <div class="position-relative" style="top: -2px;">
+                  <span class="d-block h4 mb-0 position-relative" style="left: -2px;"><strong>SENTINEL</strong></span>
+                  <span class="fs-6 text-uppercase small jgb-text-letter-spacing-wide d-block" style="font-size: .75rem !important;">Industrial Roofing</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 d-lg-flex align-items-lg-center justify-content-center">
+            <div class="d-flex flex-column flex-lg-row justify-content-start">
+              <div class="order-lg-1 d-flex">
+                <button class="navbar-toggler border-0 py-2 p-lg-0 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span> <span class="visually-hidden">Menu</span>
+                </button>
+                <!--
+                <button class="bg-transparent border-0 p-2 order-lg-1"><span class="fa-solid fa-magnifying-glass"></span><span class="visually-hidden">Search</span></button>
+                -->
+              </div>
+              <div class="collapse navbar-collapse order-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 me-4 me-lg-0 small">
+                  {{- with site.Data.settings.site_menu }}
+                    {{- range . }}
+                      <li class="nav-item">
+                        <a class="nav-link text-dark p-2 border-top border-1 {{ if eq .menu_item $page.Title }}border-red{{ else }}border-white{{ end }}" href="{{ .url }}">{{ .menu_item }}</a>
+                      </li>
+                    {{- end }}
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2 text-end d-flex align-items-lg-center justify-content-end">
+            <p class="py-2 mb-0"><a class="btn btn-red rounded-pill px-3" href="tel:{{ site.Data.settings.phone }}">{{ site.Data.settings.phone | urlize }}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

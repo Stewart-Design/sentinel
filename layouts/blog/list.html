@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ partial "header.html" . }}
+  <main class="pt-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 mx-md-auto jgb-main-content lh-lg libre-baskerville-regular">
+          {{ .Content }}
+
+          {{ range .Paginator.Pages }}
+            <div class="mb-6">
+              {{ if .Params.featured_image }}
+                <div class="mb-4">
+                  <img src="{{ .Params.featured_image }}" class="img-fluid" alt="Image from {{ .Title }}">
+                </div>
+              {{ end }}
+              {{ .Render "summary" }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </main>
+{{ end }}

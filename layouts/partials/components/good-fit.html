@@ -1,0 +1,42 @@
+<section class="pt-6 text-center">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-xl-8 mx-xl-auto">
+        <h2 class="mb-4 display-6">{{ .Params.good_fit.heading }}</h2>
+        <p>{{ .Params.good_fit.intro }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="bg-light rounded-5 p-4 p-lg-5 h-100">
+          {{ with .Params.good_fit.good }}
+            <h3>{{ .heading }}</h3>
+            {{ range .lists }}
+              <h4 class="mt-4">{{ .heading }}</h4>
+              <ul class="list-unstyled">
+                {{ range .items }}
+                  <li class="mb-2"><span class="fa-regular fa-circle-check text-success"></span> {{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bg-light rounded-5 p-4 p-lg-5 h-100">
+          {{ with .Params.good_fit.bad }}
+            <h3>{{ .heading }}</h3>
+            {{ range .lists }}
+              <h4 class="mt-4">{{ .heading }}</h4>
+              <ul class="list-unstyled">
+                {{ range .items }}
+                  <li class="mb-2"><span class="fa-regular fa-circle-x text-danger"></span> {{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

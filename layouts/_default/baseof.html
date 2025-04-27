@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+  <head>
+    {{ partial "head.html" . }}
+    <style>
+      .site-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        transition: transform 0.25s;
+      }
+      .site-nav.is-hidden {
+        transform: translateY(-100%);
+      }
+      .site-nav.is-visible {
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  {{ with site.Data.settings.google_analytics_id }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{ . }}');
+    </script>
+  {{ end }}
+  <body class="{{ .Page.Title | urlize }} poppins-light">
+
+    {{ partial "nav-splash.html" . }}
+
+    {{ block "main" . }}{{ end }}
+
+    {{ partial "footer.html" . }}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+
+      let scrollPos = 0;
+      const nav = document.querySelector('.site-nav');
+      const navHeight = nav.offsetHeight;
+      const hero = document.getElementById('topper');
+      hero.style.marginTop = navHeight + "px"
+
+      function checkPosition() {
+        let windowY = window.scrollY;
+        if (windowY < scrollPos) {
+          // Scrolling UP
+          nav.classList.add('is-visible');
+          nav.classList.remove('is-hidden');
+        } else {
+          if (windowY > 200) {
+          // Scrolling DOWN
+          nav.classList.add('is-hidden');
+          nav.classList.remove('is-visible');
+          }
+        }
+        scrollPos = windowY;
+      }
+
+      window.addEventListener('scroll', checkPosition);
+    </script>
+
+  </body>
+</html>

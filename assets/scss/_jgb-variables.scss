@@ -1,0 +1,79 @@
+$poppins: 'Poppins', 'Arial Narrow', Charcoal, 'Arial Black', sans-serif !default;
+$poppins-light: 'Poppins-Light', 'Arial Narrow', Charcoal, 'Arial Black', sans-serif !default;
+$recoleta-light: 'Recoleta-Light', 'Times New Roman', Times, Georgia, serif !default;
+$recoleta-medium: 'Recoleta-Medium', 'Times New Roman', Times, Georgia, serif !default;
+$recoleta-regular: 'Recoleta-Regular', 'Times New Roman', Times, Georgia, serif !default;
+
+$primary: $jgb-red;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  8: $spacer * 7.5,
+  9: $spacer * 9,
+  10: $spacer * 10.5,
+  11: $spacer * 12,
+  12: $spacer * 13.5,
+  13: $spacer * 15,
+  14: $spacer * 16.5,
+  15: $spacer * 18
+);
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+$jgb-bp-xs: 0 !default;
+$jgb-bp-sm: 576px !default;
+$jgb-bp-md: 768px !default;
+$jgb-bp-lg: 992px !default;
+$jgb-bp-xl: 1400px !default;
+$jgb-bp-xxl: 1700px !default;
+
+$jbg-breakpoints: (
+  $jgb-bp-xs,
+  $jgb-bp-sm,
+  $jgb-bp-md,
+  $jgb-bp-lg,
+  $jgb-bp-xl,
+  $jgb-bp-xxl
+);
+
+$grid-breakpoints: (
+  xs: $jgb-bp-xs,
+  sm: $jgb-bp-sm,
+  md: $jgb-bp-md,
+  lg: $jgb-bp-lg,
+  xl: $jgb-bp-xl,
+  xxl: $jgb-bp-xxl
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+$enable-negative-margins: true;
+
+$global-important: !important;
+
+$fg-p-measure: 40rem;
+
+$jgb-bar-color: $jgb-red !default;
+$jgb-bar-position: 'top' !default;
+$jgb-bar-width: 7rem !default;

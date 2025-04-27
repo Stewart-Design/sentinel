@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Den-Basuky';
+	src: url('/fonts/den-basuky/Den-Basuky.eot');
+	src: url('/fonts/den-basuky/Den-Basuky.eot?#iefix') format('embedded-opentype'),
+             url('/fonts/den-basuky/Den-Basuky.woff2') format('woff2'),
+	     url('/fonts/den-basuky/Den-Basuky.woff') format('woff'),
+	     url('/fonts/den-basuky/Den-Basuky.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.den-basuky {
+  font-family: $den-basuky !important;
+}

@@ -1,0 +1,12 @@
+
+{{ with site.Data.footer }}
+  <footer id="footer py-6">
+    <div class="container-fluid small">
+      <p class="mb-1">&copy; {{ now.Year }} SENTINEL Industrial Roofing. All rights reserved.</p>
+      <div class="">
+        {{ .logo }}
+      </div>
+      <p><a class="" href="mailto:{{ .email }}">{{ .email }}</a></p>
+    </div>
+  </footer>
+{{ end }}

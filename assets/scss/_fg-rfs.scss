@@ -1,0 +1,5 @@
+.display-3 {
+  @include media-breakpoint-down(lg) {
+    font-size: rfs-fluid-value(4.5rem);
+  }
+}

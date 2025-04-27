@@ -1,0 +1,8 @@
+{{ with site.Data.settings.postscript }}
+  <section class="py-7 text-center">
+    <div class="container">
+      <p class="mb-4 fs-3">{{ .heading }}</p>
+      <a href="{{ .url }}" class="btn btn-red rounded-pill px-4">{{ .button_text }}</a>
+    </div>
+  </section>
+{{ end }}

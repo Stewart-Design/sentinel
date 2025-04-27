@@ -1,0 +1,39 @@
+{{ $order := "" }}
+{{ with .Params.alternating_grid }}
+  <section id="alternating-grid" aria-label="How We Help" class="pt-6">
+    <div class="container">
+      <div class="mt-n6">
+        {{ range $i, $_ := . }}
+          {{ $src := "" }}
+          {{ $alt := "" }}
+          {{ if not ( modBool $i 2 ) }}
+            {{ $order = "order-lg-1" }}
+          {{ else }}
+            {{ $order = "order-lg-3" }}
+          {{ end }}
+          <div class="row mt-6 gx-lg-5">
+            <div class="col-lg-6 mb-4 mb-lg-0 {{ $order }}">
+              <h2 class="display-6">{{ .heading }}</h2>
+              <p class="fs-5 mb-4"><em>{{ .subheading }}</em></p>
+              {{ .text | markdownify }}
+              <div class="mt-4">
+                {{ partial "generic/button" (dict "button" .cta) }}
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 mb-lg-0 order-lg-2">
+              {{ if .image }}
+                {{ if .image.alt }}
+                  {{ $alt = .image.alt }}
+                {{ end }}
+                {{ if .image.src }}
+                  {{ $src = resources.Get .image.src }}
+                  <img class="img-fluid" loading="lazy" src='{{ ( $src.Fill "960x640 webp Center" ).RelPermalink }}' alt="{{ $alt }}" />
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,9 @@
+
+<ul class="list-inline small text-muted">
+  {{ if .Ancestors }}
+    {{- range .Ancestors.Reverse }}
+      <li class="list-inline-item me-0"><a class="" href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="text-black-50">/</span> </li>
+    {{- end }}
+  {{ end }}
+  <li class="list-inline-item">{{ .Title }}</li>
+</ul>

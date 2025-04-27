@@ -1,0 +1,10 @@
+{{ $injuryPages := site.GetPage "practice-areas" }}
+<section class="py-4 bg-dark text-white text-center" aria-label="Personal Injury Types">
+  <div class="container">
+    <div class="d-lg-flex justify-content-between">
+      {{ range $injuryPages.Pages }}
+        <div class="position-relative"><span class="fa-regular fa-circle-check"></span> <a class="stretched-link text-decoration-none text-white" href="{{ .RelPermalink }}">{{ .Params.title }}</a></div>
+      {{ end }}
+    </div>
+  </div>
+</section>

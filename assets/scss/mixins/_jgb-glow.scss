@@ -1,0 +1,5 @@
+@mixin jgb-glow($glowColor) {
+  -webkit-box-shadow: 0px 0px 72px 4px rgba($glowColor,0.25);
+  -moz-box-shadow: 0px 0px 72px 4px rgba($glowColor,0.25);
+  box-shadow: 0px 0px 72px 4px rgba($glowColor,0.25);
+}

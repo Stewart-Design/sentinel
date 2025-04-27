@@ -1,0 +1,26 @@
+<main id="topper" class="pt-6">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 mb-5 mb-lg-0">
+        <div class="">
+          <h1 class="display-5 mb-4">{{ .Params.profile.heading | markdownify }}</h1>
+          {{ if .Params.profile.text }}
+            <div class="mb-4 pb-2 lead">{{ .Params.profile.text | markdownify }}</div>
+          {{ end }}
+          {{ if .Params.profile.cta }}
+            {{ partial "generic/button" (dict "button" .Params.profile.cta) }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-lg-4 ms-lg-auto">
+        {{ $image := "" }}
+        {{ $alt := "" }}
+        {{ if .Params.profile.image }}
+          {{ $image = resources.Get .Params.profile.image.src }}
+          {{ $image = $image.RelPermalink }}
+        {{ end }}
+        <img class="img-fluid" src="{{ $image }}" alt="{{ $alt }}" />
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,20 @@
+{{ $injuryPages := site.GetPage "practice-areas" }}
+<section class="pt-7 bg-white text-center">
+  <div class="container">
+    <h2 class="mb-5 text-center display-6">{{ .Params.services.heading }}</h2>
+    <div class="row gx-4">
+      {{ range $injuryPages.Pages }}
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="bg-light p-4 p-lg-5 rounded-5 h-100">
+            {{ if .Params.icon }}
+              <span class="fa-sharp fa-{{ .Params.icon }} display-3 text-red"></span>
+            {{ end }}
+            <h3 class="h2 mt-4">{{ .Title }}</h3>
+            <p class="small">{{ .Params.description }}</p>
+            <p class="mb-0"><a href="{{ .RelPermalink }}">Learn more</a></p>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

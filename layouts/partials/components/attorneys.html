@@ -1,0 +1,31 @@
+<section class="pb-5">
+  <div class="container">
+    {{ $attorneys := where $.Site.RegularPages "Section" "meet-us"}}
+    {{ range $attorneys }}
+      {{ $src := "" }}
+      {{ $alt := "" }}
+      <div class="row gx-5 mb-5">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          {{ if .Params.image }}
+            {{ if .Params.image.alt }}
+              {{ $alt = .Params.image.alt }}
+            {{ end }}
+            {{ if .Params.image.src }}
+              {{ $src = resources.Get .Params.image.src }}
+              <img class="img-fluid" loading="lazy" src='{{ ( $src.Fill "960x960 webp Center" ).RelPermalink }}' alt="{{ $alt }}" />
+            {{ end }}
+          {{ end }}
+        </div>
+        <div class="col-lg-8">
+          <h2 class="h1">{{ .Title }}</h2>
+          {{ if .Params.position }}
+            <p class="fs-5"><em>{{ .Params.position }}</em></p>
+          {{ end }}
+          <div class="lh-lg small">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</section>

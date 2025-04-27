@@ -1,0 +1,16 @@
+<form name="contact" action="/form-success" method="POST" data-netlify="true">
+  <input type="hidden" name="subject" data-remove-prefix value="Contact inquiry coveredbysentinel.com" />
+  <div class="mb-3">
+    <label for="nameInput" class="form-label"><strong>Name</strong> <span class="text-danger"><sup>*</sup></span></label>
+    <input name="name" type="text" class="form-control" id="nameInput" required>
+  </div>
+  <div class="mb-3">
+    <label for="emailInput" class="form-label"><strong>Email</strong> <span class="text-danger"><sup>*</sup></span></label>
+    <input name="email" type="email" class="form-control" id="emailInput" required>
+  </div>
+  <div class="mb-3">
+    <label for="orderInput" class="form-label"><strong>Message</strong> <span class="text-danger"><sup>*</sup></span></label>
+    <textarea name="message" class="form-control" id="orderInput" rows="3" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-red rounded-pill px-3">Contact</button>
+</form>

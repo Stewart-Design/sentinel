@@ -1,0 +1,11 @@
+{{ $currentPage := .Title }}
+<h2 class="h6 small text-primary jgb-text-letter-spacing-wide text-uppercase mb-4">Practice Areas</h2>
+<ul class="nav flex-column">
+  {{- with site.Data.settings.practice_areas_menu }}
+    {{- range . }}
+      <li class="nav-item">
+        <a class="nav-link text-dark {{ if eq .menu_item $currentPage }}bg-light{{ end }} ps-4 ps-lg-5 pe-lg-3 ms-lg-n5 me-lg-n3" href="{{ .url }}"><span class="fa-solid fa-chevron-right position-absolute ms-n3 ms-lg-n4 mt-1 small text-red"></span>{{ .menu_item }}</a>
+      </li>
+    {{- end }}
+  {{ end }}
+</ul>

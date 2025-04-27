@@ -1,0 +1,17 @@
+baseURL = 'https://examplesite.com/'
+languageCode = 'en-us'
+title = 'Sentinel'
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.116.0"
+  [[module.imports]]
+    path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    identifier = 'home'
+    pageRef = '/'
+    weight = 10

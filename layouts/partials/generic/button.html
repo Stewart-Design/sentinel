@@ -1,0 +1,22 @@
+{{ $text := "" }}
+{{ $url := "" }}
+{{ $size := "" }}
+{{ $classes := "btn-red" }}
+
+{{ if .button.text }}
+  {{ $text = .button.text }}
+{{ end }}
+
+{{ if .button.size }}
+  {{ $size = .button.size }}
+{{ end }}
+
+{{ if .button.url }}
+  {{ $url = .button.url }}
+{{ end }}
+
+{{ if .classes }}
+  {{ $classes = .classes }}
+{{ end }}
+
+<a href="{{ $url }}" class="btn {{ $classes }} {{ $size }} rounded-pill px-3">{{ $text }}</a>

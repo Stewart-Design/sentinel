@@ -1,0 +1,56 @@
+{{ with .Params.worth_it }}
+  <section class="py-6 text-center">
+    <div class="container">
+      <h2 class="display-5">{{ .heading }}</h2>
+      <div class="row mt-5 gx-md-5">
+        <div class="col-md-6 mb-5">
+          <div class="bg-light p-4 p-lg-5 h-100 rounded-4">
+            {{ if .mission.icon }}
+              <span class="fa-sharp fa-{{ .mission.icon }} text-red display-3 mb-4"></span>
+            {{ end }}
+            <h3 class="mb-3">{{ .mission.heading }}</h3>
+            <p class="small">{{ .mission.text }}</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-5">
+          <div class="bg-light p-4 p-lg-5 h-100 rounded-4">
+            {{ if .vision.icon }}
+              <span class="fa-sharp fa-{{ .vision.icon }} text-red display-3 mb-4"></span>
+            {{ end }}
+            <h3 class="mb-3">{{ .vision.heading }}</h3>
+            <p class="small">{{ .vision.text }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-md-5">
+        <div class="col-md-4 mb-5 mb-md-0">
+          <div class="bg-light p-4 p-lg-5 h-100 rounded-4">
+            {{ if .passion.icon }}
+              <span class="fa-sharp fa-{{ .passion.icon }} text-red display-3 mb-4"></span>
+            {{ end }}
+            <h3 class="mb-3">{{ .passion.heading }}</h3>
+            <p class="small">{{ .passion.text }}</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5 mb-md-0">
+          <div class="bg-light p-4 p-lg-5 h-100 rounded-4">
+            {{ if .preparation.icon }}
+              <span class="fa-sharp fa-{{ .preparation.icon }} text-red display-3 mb-4"></span>
+            {{ end }}
+            <h3 class="mb-3">{{ .preparation.heading }}</h3>
+            <p class="small">{{ .preparation.text }}</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5 mb-md-0">
+          <div class="bg-light p-4 p-lg-5 h-100 rounded-4">
+            {{ if .persistence.icon }}
+              <span class="fa-sharp fa-{{ .persistence.icon }} text-red display-3 mb-4"></span>
+            {{ end }}
+            <h3 class="mb-3">{{ .persistence.heading }}</h3>
+            <p class="small">{{ .persistence.text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

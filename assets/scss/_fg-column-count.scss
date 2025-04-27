@@ -1,0 +1,41 @@
+.fg-column-count-2, %fg-column-count-2 {
+  column-count: 2 $global-important;
+  column-gap: 4rem;
+}
+
+.fg-column-count-3, %fg-column-count-3 {
+  column-count: 3 $global-important;
+}
+
+.fg-column-count-4, %fg-column-count-4 {
+  column-count: 4 $global-important;
+}
+
+.fg-column-count-5, %fg-column-count-5 {
+  column-count: 5 $global-important;
+}
+
+@each $bp-value, $breakpoint in (xs, $jgb-bp-xs),
+                                (sm, $jgb-bp-sm),
+                                (md, $jgb-bp-md),
+                                (lg, $jgb-bp-lg),
+                                (xl, $jgb-bp-xl) {
+  @media (min-width: $breakpoint) {
+    .fg-column-count-#{$bp-value}-1 {
+      column-count: 1 $global-important;
+    }
+    .fg-column-count-#{$bp-value}-2 {
+      column-count: 2 $global-important;
+      column-gap: 4rem;
+    }
+    .fg-column-count-#{$bp-value}-3 {
+      column-count: 3 $global-important;
+    }
+    .fg-column-count-#{$bp-value}-4 {
+      column-count: 4 $global-important;
+    }
+    .fg-column-count-#{$bp-value}-5 {
+      column-count: 5 $global-important;
+    }
+  }
+}

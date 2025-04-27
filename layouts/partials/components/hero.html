@@ -1,0 +1,40 @@
+{{ with .Params.hero }}
+  <main id="topper" class="bg-red text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 mb-5 mb-lg-0">
+          <div class="py-8 my-3">
+            <h1 class="display-4 mb-4">{{ .heading }}</h1>
+            <p class="mb-4 pb-2 lead">{{ .lead }}</p>
+            {{ if .cta }}
+              {{ partial "generic/button" (dict "classes" "btn-outline-white" "button" .cta) }}
+            {{ end }}
+          </div>
+        </div>
+        <div class="col-lg-4 ms-lg-auto d-none d-lg-block">
+          <div class="w-100 h-100">
+            {{ $image := "" }}
+            {{ $alt := "" }}
+            {{ if and .image .image.alt }}
+              {{ $alt = .image.alt }}
+            {{ end }}
+            {{ if and .image .image.src }}
+              {{ $image = resources.Get .image.src }}
+              {{ $image = ( $image.Fill "960x640 webp Center" ).RelPermalink }}
+              {{ if .image.caption }}
+                <div class="h-100 d-flex align-items-end jgb-lg-bleed-right" style="background-image: url({{ $image }}); background-size: cover; background-position: center;">
+                  <p class="m-3 small">{{ .image.caption }}</p>
+                </div>
+              {{ end }}
+            {{ end }}
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="d-lg-none position-relative">
+      <p class="m-3 small position-absolute" style="bottom: 0px;">{{ .image.caption }}</p>
+      <img class="img-fluid" src="{{ $image }}" alt="{{ $alt }}" />
+    </div>
+  </main>
+{{ end }}

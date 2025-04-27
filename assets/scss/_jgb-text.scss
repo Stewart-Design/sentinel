@@ -1,0 +1,14 @@
+.jgb-text-letter-spacing-wide {
+  letter-spacing: 4px;
+}
+
+.jgb-bar {
+  @include jgb-bar($jgb-bar-color, top);
+  &.jgb-bar--bottom {
+    @include jgb-bar($jgb-bar-color, bottom);
+  }
+}
+
+.jgb-bar--blue {
+  @include jgb-bar($jgb-blue, top);
+}
