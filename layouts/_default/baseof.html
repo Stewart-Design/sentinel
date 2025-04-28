@@ -30,11 +30,13 @@
       gtag('config', '{{ . }}');
     </script>
   {{ end }}
-  <body class="{{ .Page.Title | urlize }} poppins-light">
+  <body class="{{ .Page.Title | urlize }}">
 
     {{ partial "nav-splash.html" . }}
 
     {{ block "main" . }}{{ end }}
+
+    {{ partial "components/cta.html" . }}
 
     {{ partial "footer.html" . }}
 

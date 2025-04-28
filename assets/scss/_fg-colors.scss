@@ -1,39 +1,9 @@
 // For Good
 
 // Primary
-$jgb-red: #8f181b;
-$jgb-red-light: #ed1b20;
-$jgb-red-dark: #65130f;
-$jgb-blue: #54cbdb;
-
-$jgb-red-rgb: "143,24,27";
-$jgb-red-light-rgb: "237,27,32";
-$jgb-blue-rgb: "84,203,219";
+$s-blue: #0054a6;
 
 $custom-colors: (
   "white": #fff,
-  "red": $jgb-red,
-  "red-dark": $jgb-red-dark,
-  "red-light": $jgb-red-light,
-  "jgb-blue": $jgb-blue
+  "s-blue": $s-blue
 );
-
-.jgb-gradient-red {
-  background: rgb(255,255,255);
-  background: linear-gradient(175deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.25) 56%, rgba(0,204,231,0.25) 100%);
-}
-
-.jgb-gradient-blue-top {
-  background: rgb(33,37,41);
-  background: linear-gradient(45deg, rgba(33,37,41,0) 0%, rgba(84,203,219,1) 100%);
-}
-
-.jgb-gradient-blue-red {
-  background: rgb(143,24,27);
-  background: linear-gradient(90deg, rgba(143,24,27,1) 0%, rgba(84,203,219,1) 100%);
-}
-
-// .jgb-gradient-red-light-red {
-//   background: rgb(182,21,99);
-//   background: linear-gradient(90deg, rgba($jgb-red-rgb, 1) 0%, rgba($jgb-red-light-rgb, 1) 100%);
-// }

@@ -4,7 +4,7 @@ $recoleta-light: 'Recoleta-Light', 'Times New Roman', Times, Georgia, serif !def
 $recoleta-medium: 'Recoleta-Medium', 'Times New Roman', Times, Georgia, serif !default;
 $recoleta-regular: 'Recoleta-Regular', 'Times New Roman', Times, Georgia, serif !default;
 
-$primary: $jgb-red;
+$primary: $s-blue;
 
 $spacer: 1rem;
 $spacers: (
@@ -35,29 +35,29 @@ $display-font-sizes: (
   6: 2.5rem
 );
 
-$jgb-bp-xs: 0 !default;
-$jgb-bp-sm: 576px !default;
-$jgb-bp-md: 768px !default;
-$jgb-bp-lg: 992px !default;
-$jgb-bp-xl: 1400px !default;
-$jgb-bp-xxl: 1700px !default;
+$s-bp-xs: 0 !default;
+$s-bp-sm: 576px !default;
+$s-bp-md: 768px !default;
+$s-bp-lg: 992px !default;
+$s-bp-xl: 1400px !default;
+$s-bp-xxl: 1700px !default;
 
 $jbg-breakpoints: (
-  $jgb-bp-xs,
-  $jgb-bp-sm,
-  $jgb-bp-md,
-  $jgb-bp-lg,
-  $jgb-bp-xl,
-  $jgb-bp-xxl
+  $s-bp-xs,
+  $s-bp-sm,
+  $s-bp-md,
+  $s-bp-lg,
+  $s-bp-xl,
+  $s-bp-xxl
 );
 
 $grid-breakpoints: (
-  xs: $jgb-bp-xs,
-  sm: $jgb-bp-sm,
-  md: $jgb-bp-md,
-  lg: $jgb-bp-lg,
-  xl: $jgb-bp-xl,
-  xxl: $jgb-bp-xxl
+  xs: $s-bp-xs,
+  sm: $s-bp-sm,
+  md: $s-bp-md,
+  lg: $s-bp-lg,
+  xl: $s-bp-xl,
+  xxl: $s-bp-xxl
 );
 
 $container-max-widths: (
@@ -73,7 +73,3 @@ $enable-negative-margins: true;
 $global-important: !important;
 
 $fg-p-measure: 40rem;
-
-$jgb-bar-color: $jgb-red !default;
-$jgb-bar-position: 'top' !default;
-$jgb-bar-width: 7rem !default;

@@ -1,16 +1,39 @@
-<form name="contact" action="/form-success" method="POST" data-netlify="true">
-  <input type="hidden" name="subject" data-remove-prefix value="Contact inquiry coveredbysentinel.com" />
-  <div class="mb-3">
-    <label for="nameInput" class="form-label"><strong>Name</strong> <span class="text-danger"><sup>*</sup></span></label>
-    <input name="name" type="text" class="form-control" id="nameInput" required>
-  </div>
-  <div class="mb-3">
-    <label for="emailInput" class="form-label"><strong>Email</strong> <span class="text-danger"><sup>*</sup></span></label>
-    <input name="email" type="email" class="form-control" id="emailInput" required>
-  </div>
-  <div class="mb-3">
-    <label for="orderInput" class="form-label"><strong>Message</strong> <span class="text-danger"><sup>*</sup></span></label>
-    <textarea name="message" class="form-control" id="orderInput" rows="3" required></textarea>
-  </div>
-  <button type="submit" class="btn btn-red rounded-pill px-3">Contact</button>
-</form>
+{{ with .Params.splash_form }}
+  <main id="topper" class="bg-s-blue text-white py-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-9 mx-xxl-auto">
+          <div class="text-center">
+            <h1 class="display-1 titillium-web-bold">{{ .heading }}</h1>
+            <p class="fs-3 titillium-web-light mb-5">{{ .subheading }}</p>
+          </div>
+          <div id="contact-us" class="bg-white text-dark p-5">
+            <div class="row">        
+              <div class="col-md-6 mb-4 mb-md-0">
+                <p class="h1 titillium-web-bold">{{ .form_heading }}</p>
+              </div>
+              <div class="col-md-6">
+                <form name="sentinel-contact" action="/form-success" method="POST" data-netlify="true">
+                  <input type="hidden" name="subject" data-remove-prefix value="Contact inquiry coveredbysentinel.com" />
+                  <div class="mb-0">
+                    <label for="nameInput" class="form-label visually-hidden"><strong>Name</strong> <span class="text-danger"><sup>*</sup></span></label>
+                    <input name="name" type="text" class="form-control rounded-0" id="nameInput" placeholder="Name" required>
+                  </div>
+                  <div class="mb-0">
+                    <label for="emailInput" class="form-label visually-hidden"><strong>Email</strong> <span class="text-danger"><sup>*</sup></span></label>
+                    <input name="email" type="email" class="form-control rounded-0" placeholder="Email" id="emailInput" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="orderInput" class="form-label visually-hidden"><strong>Message</strong> <span class="text-danger"><sup>*</sup></span></label>
+                    <textarea name="message" class="form-control rounded-0" id="orderInput" placeholder="Tell us about your property and how we can help." rows="3" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-s-blue rounded-0 px-3">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+{{ end }}
