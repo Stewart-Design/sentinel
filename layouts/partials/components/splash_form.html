@@ -18,6 +18,7 @@
                   action="/form-success"
                   method="POST"
                   netlify-honeypot="phone"
+                  data-netlify-recaptcha="true"
                   data-netlify="true"
                 >
                   <input type="hidden" name="subject" data-remove-prefix value="Contact inquiry coveredbysentinel.com" />
@@ -38,6 +39,7 @@
                     <label for="orderInput" class="form-label visually-hidden"><strong>Message</strong> <span class="text-danger"><sup>*</sup></span></label>
                     <textarea name="message" class="form-control rounded-0" id="orderInput" placeholder="Tell us about your property and how we can help." rows="3" required></textarea>
                   </div>
+                  <div data-netlify-recaptcha="true"></div>
                   <button type="submit" class="btn btn-s-blue rounded-0 px-3">Submit</button>
                 </form>
               </div>
