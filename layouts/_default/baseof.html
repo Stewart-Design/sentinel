@@ -19,17 +19,7 @@
       }
     </style>
   </head>
-  <!-- Google tag (gtag.js) -->
-  {{ with site.Data.settings.google_analytics_id }}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', '{{ . }}');
-    </script>
-  {{ end }}
+  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-944928002"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-944928002'); </script>
   <body class="{{ .Page.Title | urlize }}">
 
     {{ partial "nav-splash.html" . }}

@@ -13,8 +13,19 @@
                 <p class="h1 titillium-web-bold">{{ .form_heading }}</p>
               </div>
               <div class="col-md-6">
-                <form name="sentinel-contact" action="/form-success" method="POST" data-netlify="true">
+                <form
+                  name="sentinel-contact"
+                  action="/form-success"
+                  method="POST"
+                  netlify-honeypot="phone"
+                  data-netlify="true"
+                >
                   <input type="hidden" name="subject" data-remove-prefix value="Contact inquiry coveredbysentinel.com" />
+                  <p class="visually-hidden">
+                    <label>
+                      Phone: <input name="phone" />
+                    </label>
+                  </p>
                   <div class="mb-0">
                     <label for="nameInput" class="form-label visually-hidden"><strong>Name</strong> <span class="text-danger"><sup>*</sup></span></label>
                     <input name="name" type="text" class="form-control rounded-0" id="nameInput" placeholder="Name" required>
