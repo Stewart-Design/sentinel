@@ -1,18 +1,28 @@
-{{ $testimonials := slice }}
-
-{{ if .Params.testimonials }}
-  {{ $testimonials = .Params.testimonials }}
-{{ end }}
-
-<section id="testimonials" aria-labelledby="" class="bg-red text-white pt-6 pb-9 text-center">
+<section id="testimonials" aria-labelledby="" class="py-6 mb-6 text-center position-relative">
   <div class="container">
-    <div class="row gx-md-5 gx-xl-7">
-      {{ range first 2 $testimonials }}
-        <div class="col-md">
-          <blockquote class="fs-4"><span class="d-block display-3 mb-0">”</span><span class="d-block mt-n3">{{ .quote }}</span></blockquote>
-          <p class="small"><strong class="d-block">{{ .person }}</strong><span class="d-block">{{ .label }}</span></p>
+    <div class="row">
+      <div class="col-8 mx-auto">
+        <div id="carouselExample" class="carousel carousel-dark slide carousel-fade">
+          <div class="carousel-inner">
+            {{ range $index, $value := . }}
+              <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
+                <div class="bg-white w-100">
+                  <blockquote class="fs-4 titillium-web-light"><span class="d-block">“{{ .quote }}”</span></blockquote>
+                  <p class="small titillium-web-bold mb-0"><strong class="d-block">{{ .name }}</strong><span class="d-block">{{ .source }}</span></p>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+          <button class="carousel-control-prev ms-n5 ms-lg-n7" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next me-n5 me-lg-n7" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      {{ end }}
+      </div>
     </div>
   </div>
 </section>

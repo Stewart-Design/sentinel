@@ -1,0 +1,25 @@
+{{ define "main" }}
+  {{ with .Params.intro }}
+    {{ partial "components/management-intro" . }}
+  {{ end }}
+  {{ with .Params.calculator }}
+    {{ partial "components/savings-calculator" . }}
+  {{ end }}
+  {{ with .Params.table_panels }}
+    {{ partial "components/table-panels" . }}
+  {{ end }}
+  {{ with site.Data.testimonials }}
+    {{ partial "components/testimonials" . }}
+  {{ end }}
+  {{ with .Params.dual_panels }}
+    {{ partial "components/dual-panels" . }}
+  {{ end }}
+  {{ if .Params.fine_print }}
+    {{ with site.Data.settings.fine_print }}
+      {{ partial "components/fine-print" . }}
+    {{ end }}
+  {{ end }}
+  {{ with .Params.cta }}
+    {{ partial "components/cta" . }}
+  {{ end }}
+{{ end }}

@@ -1,2 +1,104 @@
-logo:
-email: morgantownroofing@gmail.com
+heading: "You’re Completely Covered<sup>™️</sup>"
+intro: >-
+  You never think about your roof; let’s keep it that way. SENTINEL provides comprehensive commercial Roof Management Systems (RMS) for industrial properties so you can focus on what really matters–your business.
+copyright: SENTINEL Industrial Roofing. All rights reserved. “Completely Covered” is an unregistered trademark.
+credits: Created by Stewart Design
+map_embed: >-
+  ""
+link_groups:
+  - heading: Management
+    items:
+      - text: SentinelScan™️
+        url:
+      - text: SentinelSmart™️
+        url:
+      - text: SentinelSpray™️
+        url:
+      - text: SentinelStrong™️
+        url:
+      - text: SentinelShield™️
+        url:
+      - text: SentinelStorm™️
+        url:
+  - heading: Services
+    items:
+      - text: 24/7 Emergency Repairs
+        url:
+      - text: Roof Maintainence Support
+        url:
+      - text: Cost Savings Program
+        url:
+      - text: Spray Coating
+        url:
+      - text: Structural Assessment
+        url:
+      - text: Roof Replacements
+        url:
+      - text: Flat Roof Membrane
+        url:
+      - text: Standing Seam Metal
+        url:
+      - text: Shingle
+        url:
+  - heading: Markets
+    items:
+      - text: Industrial
+        url:
+      - text: Commercial
+        url:
+      - text: Retail
+        url:
+  - heading: Company
+    items:
+      - text: About Us
+        url:
+      - text: Leadership
+        url:
+      - text: Service Areas
+        url: 
+      - text: Brand Partners
+        url:
+      - text: Careers
+        url:
+  - heading: Contact
+    items:
+      - text: Request a Quote
+        url:
+      - text: Schedule Assessment
+        url:
+      - text: Emergency Service
+        url: 
+      - text: Stay Connected
+        url:
+      - text: Find Us
+        url:
+  - heading: Service Areas
+    items:
+      - text: Pittsburgh, PA
+        url:
+      - text: Washington, PA
+        utl:
+      - text: Hershey, PA
+        url:
+      - text: Morgantown, WV
+        url:
+      - text: Bridgeport, WV
+        url:
+      - text: Charleston, WV
+        url:
+      - text: Cleveland, OH
+        url:
+      - text: Columbus, OH
+        url:
+      - text: Nashville, TN
+        url:
+      - text: Knoxville, TN
+        url:
+      - text: Louisville, KY
+        url:
+      - text: Lexington, KY
+        url:
+      - text: Wilmington, NC
+        url:
+      - text: Charlotte, NC
+        url:

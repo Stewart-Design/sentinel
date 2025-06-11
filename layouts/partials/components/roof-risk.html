@@ -1,0 +1,45 @@
+<section class="mb-6">
+  <div class="container">
+    <div class="row gx-5">
+      <div class="col-lg-8 d-flex align-items-center mb-5 mb-lg-0">
+        <div>
+          <h2 class="titillium-web-bold display-5 mb-4">{{ .heading }}</h2>
+          {{ .text | markdownify }}
+          {{ with .ctas }}
+            <div class="mt-4">
+              {{ range . }}
+                {{ partial "generic/button" (dict "classes" "btn-s-blue" "button" .) }}
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-lg-4">
+        {{ $alt := "" }}
+        {{ with .image_alt }}
+          {{ $alt = . }}
+        {{ end }}
+        {{ with .image }}
+          {{ $src := . }}
+
+          {{ $image := "" }}
+          {{/*  Get the image, either from its remote or local source  */}}
+          {{ if hasPrefix $src "http"}}
+            {{ $image = resources.GetRemote $src }}
+          {{ else }}
+            {{ $image = resources.Get $src }}
+          {{ end }}
+      
+          {{/* Resize images and add them to a variable  */}}
+          {{ if and $image (ne $image.MediaType.SubType "svg") }}
+            {{ $src = ($image.Fill (printf "%dx%d webp" 640 960)).RelPermalink }}
+          {{ end }}
+
+          <div class="h-100 w-100">
+            <img class="w-100 h-100 object-fit-cover" src="{{ $src }}" alt="{{ with $alt }}{{ .}}{{ end }}" />
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

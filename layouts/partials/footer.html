@@ -1,18 +1,9 @@
-
-{{ with site.Data.footer }}
-  <footer id="footer" class="py-6 bg-s-blue text-white">
-    <div class="container-fluid small">
-      <div class="row">
-        <div class="col-lg-4 d-lg-flex align-items-center mb-4 mb-lg-0">
-          <p class="mb-1 ps-xl-5">&copy; {{ now.Year }} SENTINEL Industrial Roofing. All rights reserved.</p>
-        </div>
-        <div class="col-lg-4 d-lg-flex justify-content-center align-items-center mb-4 mb-lg-0">
-          <p class="titillium-web-bold h5">Completely Covered<sup>™</sup></p>
-        </div>
-        <div class="col-lg-4 d-lg-flex justify-content-end align-items-center">
-          <p class="pe-xxl-5"><a class="text-white text-decoration-none" href="mailto:{{ .email }}">{{ .email }}</a></p>          
-        </div>
+<footer id="footer" class="py-6 bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 d-lg-flex align-items-center mb-4 mb-lg-0">
+        <p class="">&copy; {{ now.Year }} {{ .copyright }}</p>
       </div>
     </div>
-  </footer>
-{{ end }}
+  </div>
+</footer>

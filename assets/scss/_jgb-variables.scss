@@ -73,3 +73,8 @@ $enable-negative-margins: true;
 $global-important: !important;
 
 $fg-p-measure: 40rem;
+
+$s-z-index-content: 100 !default;
+$s-tint-opacity: .5 !default;
+$s-vignetting-opacity: .85 !default;
+$s-z-index-vignetting: 1 !default;

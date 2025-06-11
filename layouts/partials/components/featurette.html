@@ -1,0 +1,38 @@
+<section class="bg-s-blue text-white py-6 mb-6">
+  <div class="container">
+    <div class="row gx-6">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="py-4 my-3">
+          <h1 class="h1 titillium-web-bold mb-4">{{ .heading | safeHTML }}</h1>
+          <p class="mb-4 pb-2 titillium-web-light fs-5">{{ .subheading }}</p>
+          {{ if .ctas }}
+            {{ range .ctas }}
+              {{ partial "generic/button" (dict "classes" "btn-outline-white" "button" .) }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-lg-6">
+        {{ if .image }}
+          {{ $src := .image }}
+          {{ $image := "" }}
+          {{/*  Get the image, either from its remote or local source  */}}
+          {{ if hasPrefix $src "http"}}
+            {{ $image = resources.GetRemote $src }}
+          {{ else }}
+            {{ $image = resources.Get $src }}
+          {{ end }}
+      
+          {{/* Resize images and add them to a variable  */}}
+          {{ if and $image (ne $image.MediaType.SubType "svg") }}
+            {{ $src = ($image.Fill (printf "%dx%d Center webp" 800 300)).RelPermalink }}
+          {{ end }}
+
+          <div class="w-100 h-100">
+            <img class="img-fluid w-100 h-100 object-fit-cover" src="{{ $src }}" alt="{{ with .image_alt }}{{ .}}{{ end }}" />
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

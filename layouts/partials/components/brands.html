@@ -1,0 +1,20 @@
+<section class="py-5">
+  <ul class="list-inline mb-n4">
+    {{ range . }}
+      {{ $src := .logo }}
+      {{ $image := "" }}
+      {{/*  Get the image, either from its remote or local source  */}}
+      {{ if hasPrefix $src "http"}}
+        {{ $image = resources.GetRemote $src }}
+      {{ else }}
+        {{ $image = resources.Get $src }}
+      {{ end }}
+  
+      {{/* Resize images and add them to a variable  */}}
+      {{ if and $image (ne $image.MediaType.SubType "svg") }}
+        {{ $src = ($image.Fit (printf "%dx%d webp" 200 100)).RelPermalink }}
+      {{ end }}
+      <li class="list-inline-item mb-4 px-3"><img class="img-fluid" src="{{ $src }}" alt="{{ .brand }} logo" /></li>
+    {{ end }}
+  </ul>
+</section>
