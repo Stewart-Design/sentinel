@@ -1,0 +1,37 @@
+<section class="mb-6">
+  <div class="container">
+    <div class="row gx-0">
+      <div class="col-lg-8">
+        <div class="bg-light p-5 h-100 d-flex align-items-center">
+          <div class="me-xl-5">
+            <h2 class="titillium-web-bold display-5 mb-3">{{ .heading }}</h2>
+            <p class="titillium-web-light mb-4 fs-5">
+              {{ .text }}
+            </p>
+            {{ range .ctas }}
+              {{ partial "generic/button" (dict "classes" "btn-s-blue" "button" .) }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        {{ $src := .image }}
+        {{ if .image }}
+          {{ $image := "" }}
+          {{/*  Get the image, either from its remote or local source  */}}
+          {{ if hasPrefix $src "http"}}
+            {{ $image = resources.GetRemote $src }}
+          {{ else }}
+            {{ $image = resources.Get $src }}
+          {{ end }}
+      
+          {{/* Resize images and add them to a variable  */}}
+          {{ if and $image (ne $image.MediaType.SubType "svg") }}
+            {{ $src = ($image.Fit (printf "%dx%d webp" 800 450)).RelPermalink }}
+          {{ end }}
+        {{ end }}
+        <img class="img-fluid w-100 h-100 object-fit-cover" src="{{ $src }}" alt="{{ .image_alt }}" />
+      </div>
+    </div>
+  </div>
+</section>

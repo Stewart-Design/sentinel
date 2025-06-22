@@ -1,18 +1,18 @@
 ---
 title: Smart Roofing Solutions
 subheading: Commercial Roof Management Systems (RMS)
-intro:
+company_intro:
   heading: You’re Completely Covered™
   text: >-
     You never think about your roof; let’s keep it that way. SENTINEL provides comprehensive commercial Roof Management Systems (RMS) for industrial properties so you can focus on what really matters–your business.
   ctas:
-    - text: CTA Button Text
-      url: 
-  image:
+    - text: Schedule Roof Assessment
+      url: /contact/
+  image: https://placehold.co/960x960
   image_alt:
 mission:
-  - heading: Mission
-    text: We’re on a mission to help you protect what's underneath without worrying about what's overhead.
+  heading: Mission
+  text: We’re on a mission to help you protect what's underneath without worrying about what's overhead.
 roof_risk:
   heading: Remove Roof Risk
   text: >-

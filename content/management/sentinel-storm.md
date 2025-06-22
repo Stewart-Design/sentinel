@@ -1,20 +1,31 @@
 ---
 title: SentinelStorm&trade;
-subheading: Same-Day Repairs & Replacement Plan
+subheading: Damage Assessment & Insurance Claim Assistance
 intro:
-  heading: Stay Ahead of Costly Repairs
+  heading: Don’t think your insurance will help after a storm?
   text: >-
-    Tired of patching an old, leaky roof? We'll inspect it, make immediate repairs up to $1,000, and plan your comprehensive Roof Management System (RMS) all for just $299. This assessment delivers same-day fixes for urgent issues, a detailed roof health timeline, photo documentation, and a customized replacement timeline to save you up to $50,000 and headache.
+    Storm damage isn't always obvious, but can significantly impact your roof's lifespan. Even without visible leaks, wind and hail damage can compromise structural integrity and lead to costly problems down the line. Our comprehensive storm damage assessment finds hidden issues that could qualify for insurance coverage–potentially saving you hundreds of thousands on a complete replacement at little to no cost to you.*
   ctas:
-    - text: Get Same-Day Repairs for $299 »
-      url:
-  icon: triangle-exclamation
-  icon_color: danger
-cta:
-  heading: Stop Leaks for $299
-  text: >-
-    With over 25 years of guaranteed contracting experience under our belt, we understand not just what’s overhead but also what’s underneath. Old or leaky roof? Get started with a SentinelScan assessment today
-  ctas:
-    - text: Schedule Assessment
-      url:
+    - text: Schedule Assessment »
+      url: /contact/
+  icon: bolt
+  icon_color: warning
+dual_panels:
+  - heading: Is your roof hiding storm damage?
+    image: https://placehold.co/1200x800
+    image_alt:
+    color: warning
+    items:
+      - Professional assessment of non-obvious wind and hail damage
+      - Expert documentation that satisfies insurance requirements
+      - Code compliance evaluation for additional coverage options
+  - heading: You’re Completely Covered&trade;
+    image: https://placehold.co/1200x800
+    image_alt:
+    color: warning
+    items:
+      - Direct coordination with your insurance provider for best coverage
+      - Done-for-you claim management from inspection to completion
+      - Full replacement that meets current building codes
+fine_print: true
 ---

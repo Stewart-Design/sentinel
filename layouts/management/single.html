@@ -9,10 +9,16 @@
     {{ partial "components/table-panels" . }}
   {{ end }}
   {{ with site.Data.testimonials }}
-    {{ partial "components/testimonials" . }}
+    {{ partial "components/testimonials-static" . }}
   {{ end }}
   {{ with .Params.dual_panels }}
     {{ partial "components/dual-panels" . }}
+  {{ end }}
+  {{ with .Params.triptych }}
+    {{ partial "components/triptych" . }}
+  {{ end }}
+  {{ with .Params.management_featurettes }}
+    {{ partial "components/management-featurettes-backpage" . }}
   {{ end }}
   {{ if .Params.fine_print }}
     {{ with site.Data.settings.fine_print }}
