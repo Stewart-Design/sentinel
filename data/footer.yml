@@ -1,104 +1,97 @@
-heading: "You’re Completely Covered<sup>™️</sup>"
+heading: "You’re Completely Covered&trade;"
 intro: >-
   You never think about your roof; let’s keep it that way. SENTINEL provides comprehensive commercial Roof Management Systems (RMS) for industrial properties so you can focus on what really matters–your business.
 copyright: SENTINEL Industrial Roofing. All rights reserved. “Completely Covered” is an unregistered trademark.
 credits: Created by Stewart Design
-map_embed: >-
-  ""
-link_groups:
-  - heading: Management
-    items:
-      - text: SentinelScan™️
-        url:
-      - text: SentinelSmart™️
-        url:
-      - text: SentinelSpray™️
-        url:
-      - text: SentinelStrong™️
-        url:
-      - text: SentinelShield™️
-        url:
-      - text: SentinelStorm™️
-        url:
-  - heading: Services
-    items:
-      - text: 24/7 Emergency Repairs
-        url:
-      - text: Roof Maintainence Support
-        url:
-      - text: Cost Savings Program
-        url:
-      - text: Spray Coating
-        url:
-      - text: Structural Assessment
-        url:
-      - text: Roof Replacements
-        url:
-      - text: Flat Roof Membrane
-        url:
-      - text: Standing Seam Metal
-        url:
-      - text: Shingle
-        url:
-  - heading: Markets
-    items:
-      - text: Industrial
-        url:
-      - text: Commercial
-        url:
-      - text: Retail
-        url:
-  - heading: Company
-    items:
-      - text: About Us
-        url:
-      - text: Leadership
-        url:
-      - text: Service Areas
-        url: 
-      - text: Brand Partners
-        url:
-      - text: Careers
-        url:
-  - heading: Contact
-    items:
-      - text: Request a Quote
-        url:
-      - text: Schedule Assessment
-        url:
-      - text: Emergency Service
-        url: 
-      - text: Stay Connected
-        url:
-      - text: Find Us
-        url:
-  - heading: Service Areas
-    items:
-      - text: Pittsburgh, PA
-        url:
-      - text: Washington, PA
-        utl:
-      - text: Hershey, PA
-        url:
-      - text: Morgantown, WV
-        url:
-      - text: Bridgeport, WV
-        url:
-      - text: Charleston, WV
-        url:
-      - text: Cleveland, OH
-        url:
-      - text: Columbus, OH
-        url:
-      - text: Nashville, TN
-        url:
-      - text: Knoxville, TN
-        url:
-      - text: Louisville, KY
-        url:
-      - text: Lexington, KY
-        url:
-      - text: Wilmington, NC
-        url:
-      - text: Charlotte, NC
-        url:
+map_embed: |
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3072.902615632054!2d-79.95926302276168!3d39.62939650318065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88357b7dbe084f3f%3A0x654aedf3ae9e4c60!2s180%20Chancery%20Row%2C%20Morgantown%2C%20WV%2026501!5e0!3m2!1sen!2sus!4v1750649708436!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+management:
+  heading: Management
+  items:
+    - text: SentinelScan&trade;
+      url: /management/sentinel-scan/
+    - text: SentinelSmart&trade;
+      url: /management/sentinel-smart/
+    - text: SentinelSeal™
+      url: /management/sentinel-seal/
+    - text: SentinelStrong™
+      url: /management/sentinel-strong/
+    - text: SentinelShield™
+      url: /management/sentinel-shield/
+    - text: SentinelStorm™
+      url: /management/sentinel-storm/
+services:
+  heading: Services
+  items:
+    - text: 24/7 Emergency Repairs
+      url: "tel:304-902-0659"
+    - text: Roof Maintenance Support
+      url: /management/sentinel-smart/
+    - text: Cost Savings Program
+      url: /management/sentinel-smart/
+    - text: Spray Coating
+      url: /management/sentinel-seal/
+    - text: Structural Assessment
+      url: /management/sentinel-strong/
+    - text: Roof Replacements
+      url: /management/sentinel-strong/
+markets:
+  heading: Markets
+  items:
+    - text: Industrial
+      url:
+    - text: Commercial
+      url:
+    - text: Retail
+      url:
+company:
+  heading: Company
+  items:
+    - text: About Us
+      url: /company/
+    - text: Service Areas
+      url: /contact/#service-areas
+    - text: Brand Partners
+      url: /company/#partners
+contact:
+  heading: Contact
+  items:
+    - text: Request a Quote
+      url: /contact/
+    - text: Schedule Assessment
+      url: /contact/
+    - text: Emergency Service
+      url: "tel:304-902-0659"
+    - text: Find Us
+      url: https://maps.app.goo.gl/28uFgf5HdhuJSUbe8
+service_areas:
+  heading: Service Areas
+  items:
+    - text: Pittsburgh, PA
+      url:
+    - text: Washington, PA
+      utl:
+    - text: Hershey, PA
+      url:
+    - text: Morgantown, WV
+      url:
+    - text: Bridgeport, WV
+      url:
+    - text: Charleston, WV
+      url:
+    - text: Cleveland, OH
+      url:
+    - text: Columbus, OH
+      url:
+    - text: Nashville, TN
+      url:
+    - text: Knoxville, TN
+      url:
+    - text: Louisville, KY
+      url:
+    - text: Lexington, KY
+      url:
+    - text: Wilmington, NC
+      url:
+    - text: Charlotte, NC
+      url:

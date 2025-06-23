@@ -1,6 +1,7 @@
 ---
 title: SentinelSmart&trade;
 subheading: Maintenance and Cost-Savings Program
+background_image: /img/sentinel-smart-background.jpg
 intro:
   heading: Make Your Money Work for You
   text: >-
@@ -14,16 +15,16 @@ calculator:
   heading: How Much You Could Save?
 dual_panels:
   - heading: Why pay twice for your roof?
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/sentinel-scan-background.jpg
+    image_alt: Sealed roof
     color: s-green
     items:
       - Save up to $50,000 toward future replacement or spray coating*
       - Stop expensive leaks before the damage is catastrophic
       - Maximize roof life with done-for-you maintenance
   - heading: You’re Completely Covered&trade;
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/rooftop-birdseye.jpg
+    image_alt: Birds-eye view of roof
     color: s-green
     items:
       - Make every dollar count toward future roof replacement

@@ -1,6 +1,7 @@
 ---
 title: SentinelSeal&trade;
 subheading: Extend Roof Life for a Fraction of the Cost With Spray Coating
+background_image: /img/sentinel-shield-background.jpg
 intro:
   heading: Dreading the financial burden of a full roof replacement?
   text: >-
@@ -12,16 +13,16 @@ intro:
   icon_color: s-purple
 dual_panels:
   - heading: Why replace what can be saved?
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/sentinel-scan-background.jpg
+    image_alt: Sealed roof
     color: s-purple
     items:
       - Add decades to your roof's usable lifespan without replacement
       - Virtually the same coverage as a new roof for a fraction of the cost*
       - Reapply multiple coats to save even more without replacement
   - heading: You’re Completely Covered&trade;
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/roofer.jpg
+    image_alt: Roofer installing shingles
     color: s-purple
     items:
       - Save 40% or more compared to full roof replacement*

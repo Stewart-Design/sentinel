@@ -3,14 +3,14 @@ get_in_touch:
   visit_us:
     heading: Visit Us
     lines:
-      - 123 Main Street
+      - 180 Chancery Row
       - Morgantown, WV 26501
   call_us:
     heading: Call Us
-    phone: 123 456 6789
+    phone: 304-902-0659
   email_us:
     heading: Email Us
-    email: morgantownroofint@gmail.com
+    email: morgantownroofing@gmail.com
   business_hours:
     heading: Business Hours
     hours:

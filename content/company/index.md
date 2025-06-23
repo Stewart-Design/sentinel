@@ -1,6 +1,7 @@
 ---
 title: Smart Roofing Solutions
 subheading: Commercial Roof Management Systems (RMS)
+background_image: /img/sentinel-shield-background.jpg
 company_intro:
   heading: You’re Completely Covered™
   text: >-
@@ -8,8 +9,8 @@ company_intro:
   ctas:
     - text: Schedule Roof Assessment
       url: /contact/
-  image: https://placehold.co/960x960
-  image_alt:
+  image: /img/sentinel-scan-background.jpg
+  image_alt: Sealed roof
 mission:
   heading: Mission
   text: We’re on a mission to help you protect what's underneath without worrying about what's overhead.
@@ -29,36 +30,36 @@ roof_risk:
   ctas:
     - text: Schedule Roof Assessment
       url:
-  image: https://placehold.co/640x960
-  image_alt:
+  image: /img/man-on-roof-vertical.jpg
+  image_alt: Worker installing roof
 panels:
   - heading: Commercial Repairs & Replacements
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/roofer.jpg
+    image_alt: Roofer installing shingles
     color: s-blue
     items:
       - Industrial » Manufacturing, Warehouses
       - Retail » Grocery, Shopping Centers, Malls
       - Corporate » Hospitals, Offices, Restaurants, Apartment Complexes
   - heading: Never Think About Your Roof Again
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/roof-with-skylights.jpg
+    image_alt: Roof with skylights
     color: s-blue
     items:
       - Repairs & Maintainence  »  Stay Ahead of Costly Repairs
       - Cost-Savings Program  »  Make Your Money Work for You
       - Structural Assessments  »  Make Sure You’re Safe
   - heading: Systems for Every Situation
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/sentinel-shield-background.jpg
+    image_alt: Roof
     color: s-blue
     items:
       - Membrane (”flat/rubber roofs”) » EPDM, TPO, PVC
       - Shingle » High-Wind (”architectural”)
       - Commercial Standing Seam Metal
   - heading: You’re Completely Covered™
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/man-on-roof.jpg
+    image_alt: Worker on roof
     color: s-blue
     items:
       - Smart systems and solutions for every budget

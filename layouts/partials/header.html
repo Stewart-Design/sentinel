@@ -1,5 +1,23 @@
-<header id="topper" class="pt-7 pb-4 bg-dark text-white mb-6">
-  <div class="container">
+{{ $src := "" }}
+{{ with .Params.background_image }}
+  {{ $src = . }}
+{{ end }}
+{{ if $src }}
+  {{ $image := "" }}
+  {{/*  Get the image, either from its remote or local source  */}}
+  {{ if hasPrefix $src "http"}}
+    {{ $image = resources.GetRemote $src }}
+  {{ else }}
+    {{ $image = resources.Get $src }}
+  {{ end }}
+
+  {{/* Resize images and add them to a variable  */}}
+  {{ if and $image (ne $image.MediaType.SubType "svg") }}
+    {{ $src = ($image.Fit (printf "%dx%d webp" 1900 1080)).RelPermalink }}
+  {{ end }}
+{{ end }}
+<header id="topper" class="pt-7 pb-4 bg-dark text-white mb-6 s-bg-tint" style="background-image: url('{{ $src }}'); background-size: cover; background-position: center;">
+  <div class="container s-z-index-content">
     <!--
     {{ partial "breadcrumbs.html" . }}
      -->

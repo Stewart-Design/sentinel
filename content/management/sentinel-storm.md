@@ -1,6 +1,7 @@
 ---
 title: SentinelStorm&trade;
 subheading: Damage Assessment & Insurance Claim Assistance
+background_image: /img/sentinel-shield-background.jpg
 intro:
   heading: Don’t think your insurance will help after a storm?
   text: >-
@@ -12,16 +13,16 @@ intro:
   icon_color: warning
 dual_panels:
   - heading: Is your roof hiding storm damage?
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/storm-damage.jpg
+    image_alt: Damaged shingles on roof
     color: warning
     items:
       - Professional assessment of non-obvious wind and hail damage
       - Expert documentation that satisfies insurance requirements
       - Code compliance evaluation for additional coverage options
   - heading: You’re Completely Covered&trade;
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/stain.jpg
+    image_alt: Stain on ceiling
     color: warning
     items:
       - Direct coordination with your insurance provider for best coverage

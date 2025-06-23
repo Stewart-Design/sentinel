@@ -15,7 +15,7 @@
         {{ if and $image (ne $image.MediaType.SubType "svg") }}
           {{ $src = ($image.Fit (printf "%dx%d webp" 150 80)).RelPermalink }}
         {{ end }}
-        <li><img class="px-2" src="{{ $src }}" alt="{{ .brand }} logo" style="max-width: 150px;" /></li>
+        <li><img class="px-2" src="{{ $src }}" alt="{{ .brand }} logo" style="max-width: 150px; max-height: 100px;" /></li>
       {{ end }}
     </ul>
   </div>

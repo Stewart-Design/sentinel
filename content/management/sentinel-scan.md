@@ -1,6 +1,7 @@
 ---
 title: SentinelScan&trade;
 subheading: Same-Day Repairs & Replacement Plan
+background_image: /img/sentinel-scan-background.jpg
 intro:
   heading: Stay Ahead of Costly Repairs
   text: >-
@@ -12,16 +13,16 @@ intro:
   icon_color: danger
 dual_panels:
   - heading: What’s really going on up there?
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/sentinel-scan-background.jpg
+    image_alt: Sealed roof
     color: danger
     items:
       - Patch leaks on the spot—up to $1,000 value—for just $299*
       - Stop expensive leaks before the damage is catastrophic
       - Start planning ahead for unexpected expenses
   - heading: You’re Completely Covered&trade;
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/sentinel-smart-background.jpg
+    image_alt: Man installing roof
     color: danger
     items:
       - See if you qualify to extend roof life by decades with spray coating

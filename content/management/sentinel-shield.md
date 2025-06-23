@@ -1,6 +1,7 @@
 ---
 title: SentinelShield&trade;
 subheading: 20-Year Labor and Materials Warranty–$0 for Members*
+background_image: /img/sentinel-shield-background.jpg
 intro:
   heading: Never Think About Your Roof Again
   text: >-

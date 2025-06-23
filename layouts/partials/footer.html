@@ -1,8 +1,82 @@
 <footer id="footer" class="py-6 bg-dark text-white">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-4 d-lg-flex align-items-center mb-4 mb-lg-0">
-        <p class="">&copy; {{ now.Year }} {{ .copyright }}</p>
+    <div class="row gx-lg-6">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        {{ with .heading }}
+          <h2 class="titillium-web-bold h4">{{ . | safeHTML }}</h2>
+        {{ end }}
+        {{ with .intro }}
+          <p>{{ . }}</p>
+        {{ end }}
+        <p class="mt-5 small">&copy; {{ now.Year }} {{ .copyright }}</p>
+        {{ with .credits }}
+          <p class="small">{{ . }}</p>
+        {{ end }}
+        {{ with .map_embed }}
+          <div class="mt-5">
+            {{ . | safeHTML }}
+          </div>
+        {{ end }}
+      </div>
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            {{ with .management }}
+              <h2 class="titillium-web-bold h4">{{ .heading }}</h2>
+              {{ with .items }}
+                <ul class="list-unstyled mb-0">
+                  {{ range . }}
+                    <li><a class="text-white text-decoration-none" href="{{ .url }}">{{ .text | safeHTML }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+            {{ with .company }}
+              <h2 class="titillium-web-bold h4 mt-4">{{ .heading }}</h2>
+              {{ with .items }}
+                <ul class="list-unstyled mb-0">
+                  {{ range . }}
+                    <li><a class="text-white text-decoration-none" href="{{ .url }}">{{ .text | safeHTML }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="col-lg-4 mb-4">
+            {{ with .contact }}
+              <h2 class="titillium-web-bold h4">{{ .heading }}</h2>
+              {{ with .items }}
+                <ul class="list-unstyled mb-0">
+                  {{ range . }}
+                    <li><a class="text-white text-decoration-none" href="{{ .url }}">{{ .text | safeHTML }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+            {{ with .services }}
+              <h2 class="titillium-web-bold h4 mt-4">{{ .heading }}</h2>
+              {{ with .items }}
+                <ul class="list-unstyled mb-0">
+                  {{ range . }}
+                    <li><a class="text-white text-decoration-none" href="{{ .url }}">{{ .text | safeHTML }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="col-lg-4">
+            {{ with .service_areas }}
+              <h2 class="titillium-web-bold h4">{{ .heading }}</h2>
+              {{ with .items }}
+                <ul class="list-unstyled">
+                  {{ range . }}
+                    <li><a class="text-white text-decoration-none" href="{{ .url }}">{{ .text }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
       </div>
     </div>
   </div>

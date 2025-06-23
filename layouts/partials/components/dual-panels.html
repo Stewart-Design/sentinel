@@ -16,7 +16,7 @@
         
             {{/* Resize images and add them to a variable  */}}
             {{ if and $image (ne $image.MediaType.SubType "svg") }}
-              {{ $src = ($image.Fit (printf "%dx%d webp" 800 450)).RelPermalink }}
+              {{ $src = ($image.Fill (printf "%dx%d webp" 800 400)).RelPermalink }}
             {{ end }}
           {{ end }}
           <img class="img-fluid mb-3" src="{{ $src }}" alt="" />      

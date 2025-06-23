@@ -1,6 +1,7 @@
 ---
 title: SentinelStrong&trade;
 subheading: Structural Assessments & Full Roof Replacements
+background_image: /img/sentinel-shield-background.jpg
 intro:
   heading: Time for an upgrade?
   text: >-
