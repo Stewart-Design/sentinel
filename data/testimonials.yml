@@ -1,15 +1,15 @@
 - brand: 84 Lumber
-  logo:
+  logo: /img/84-lumber-logo.png
   quote: >-
     They came out and did the work. That’s already hard to find these days. Plus, SENTINEL’s proactive approach has already saved us THOUSANDS.
   source: John Smith, Regional Manager
 - brand: Kroger
-  logo:
+  logo: /img/kroger-logo.png
   quote: >-
     It’s really unheard of all that these guys are giving us to help us keep our doors open, customers happy, and plan ahead.
   source: John Smith, CFO
-- brand: 84 Lumber
-  logo:
+- brand: Applebee’s
+  logo: /img/applebees-logo.png
   quote: >-
     SENTINEL handles our Eastern region with ease. We started with a few roofs but they took over everything once we  saw just how good of work they all did.
   source: John Smith, Director of Operations

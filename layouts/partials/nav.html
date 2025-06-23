@@ -1,7 +1,7 @@
 {{ $page := . }}
 {{ with site.Data.settings }}
   <nav class="site-nav pt-3 bg-s-blue w-100" style="z-index: 101;">
-    <div class="navbar navbar-expand-xl navbar-light bg-white">
+    <div class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="w-100">
         <div class="container position-relative bg-white">
           <div class="px-xl-5 ms-xl-n5 me-xl-n5 bg-white">
@@ -13,14 +13,14 @@
                   </div>
                 </a>
               </div>
-              <div class="col-6 col-lg d-flex align-items-center justify-content-end">
+              <div class="col-2 col-lg d-flex align-items-center justify-content-end">
                 <div>
                   <div class="xorder-lg-1 d-flex">
                     <button class="navbar-toggler border-0 py-2 p-lg-0 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span> <span class="visually-hidden">Menu</span>
                     </button>
                   </div>
-                  <div class="collapse navbar-collapse xorder-lg-0" id="navbarSupportedContent">
+                  <div class="collapse navbar-collapse xorder-lg-0">
                     <ul class="navbar-nav mb-2 mb-lg-0 me-4 me-lg-0 titillium-web-light">
                       {{- with site.Data.settings.site_menu }}
                         {{- range . }}
@@ -44,13 +44,35 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-lg-3 col-xxl-2 d-flex align-items-center justify-content-end xorder-3">
-                <a class="btn btn-s-blue btn-sm rounded-0 me-xl-5" href="{{ .quote_link }}">Request a Quote</a>
+              <div class="col-4 col-lg-3 col-xxl-2 d-flex align-items-center justify-content-end xorder-3">
+                <a class="btn btn-s-blue btn-sm rounded-0 ms-xl-5" href="{{ .quote_link }}">Request a Quote</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-lg-none collapse navbar-collapse xorder-lg-0 bg-white" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 me-4 me-lg-0 titillium-web-light">
+        {{- with site.Data.settings.site_menu }}
+          {{- range . }}
+            <li class="nav-item {{ if .sub_links }}dropdown{{ end }} text-start">
+              {{ if not .sub_links }}
+                <a class="btn nav-link text-start text-dark p-2" href="{{ .url }}">{{ .menu_item }}</a>
+              {{ else }}
+                <button class="btn border-0 dropdown-toggle titillium-web-light p-2" style="line-height: inherit; font-size: inherit;" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{ .menu_item }}
+                </button>
+                <ul class="dropdown-menu w-100">
+                  {{ range .sub_links }}
+                    <li><a class="dropdown-item" href="{{ .url }}">{{ .menu_item | safeHTML }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </li>
+          {{- end }}
+        {{ end }}
+      </ul>
     </div>
   </nav>
 {{ end }}

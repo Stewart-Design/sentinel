@@ -2,8 +2,24 @@
   <div class="container">
     <div class="row gx-xl-6">
       {{ range $index, $value := . }}
+        {{ $src := .logo }}
+        {{ if .logo }}
+          {{ $image := "" }}
+          {{/*  Get the image, either from its remote or local source  */}}
+          {{ if hasPrefix $src "http"}}
+            {{ $image = resources.GetRemote $src }}
+          {{ else }}
+            {{ $image = resources.Get $src }}
+          {{ end }}
+
+          {{/* Resize images and add them to a variable  */}}
+          {{ if and $image (ne $image.MediaType.SubType "svg") }}
+            {{ $src = ($image.Fit (printf "%dx%d webp" 150 80)).RelPermalink }}
+          {{ end }}
+        {{ end }}
         <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="bg-white w-100">
+            <div class="mb-3 d-flex align-items-center justify-content-center" style="height: 120px;"><img src="{{ $src }}" alt="{{ .brand }} logo" /></div>
             <blockquote class="fs-5 titillium-web-light"><span class="d-block">“{{ .quote }}”</span></blockquote>
             <p class="small titillium-web-bold mb-0"><strong class="d-block">{{ .name }}</strong><span class="d-block">{{ .source }}</span></p>
           </div>

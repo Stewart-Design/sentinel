@@ -35,8 +35,8 @@ table_panels:
       cost: $20,000-$50,000
 dual_panels:
   - heading: Other warranties letting you down?
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/worker-on-roof.jpg
+    image_alt: Worker on roof
     color: dark
     items:
       - Most warranties cover materials only–you still pay all labor
@@ -44,8 +44,8 @@ dual_panels:
       - Hidden requirements designed to void your warranty
       - Coverage decreases over time–when you need it most
   - heading: You’re Completely Covered&trade;
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/man-on-roof.jpg
+    image_alt: Man installing shingles
     color: dark
     items:
       - 100% labor coverage for full 20 years–no declining benefits*

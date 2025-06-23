@@ -13,16 +13,16 @@ intro:
   icon_color: s-blue
 dual_panels:
   - heading: What if your roof could last for a lifetime?
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/roofer.jpg
+    image_alt: Roofer installing shingles
     color: s-blue
     items:
       - Membrane (”Flat/rubber roofs”) » EPDM, TPO, PVC
       - Metal  (”Tin roofs”) » Grocery, Shopping Centers, Malls
       - Shingle » Apartments, Offices 
   - heading: You’re Completely Covered&trade;
-    image: https://placehold.co/1200x800
-    image_alt:
+    image: /img/sentinel-smart-background.jpg
+    image_alt: Man installing roof
     color: s-blue
     items:
       - Smart systems and solutions for every budget
