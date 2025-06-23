@@ -22,7 +22,7 @@ featurette:
     and daily operations.
   ctas:
     - text: Our Mission
-      url:
+      url: /company/#mission
   image: /img/worker-on-roof.jpg
   image_alt: Worker on roof
 management_featurettes:

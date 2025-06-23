@@ -1,0 +1,19 @@
+<section class="py-6 bg-light">
+  <div class="container">
+    <div class="mb-5">
+      <img class="img-fluid" src="https://placehold.co/1600x800" />
+    </div>
+    <div class="row text-center">
+      <div class="col-lg-8 mx-lg-auto">
+        {{ with .heading }}
+          <h2 class="titillium-web-bold mb-5">{{ . }}</h2>
+        {{ end }}
+        {{ with .items }}
+          {{ range . }}
+            <span class="border border-1 border-dark px-3 py-2 mb-3 mx-1 rounded-pill d-inline-block">{{ . }}</span>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

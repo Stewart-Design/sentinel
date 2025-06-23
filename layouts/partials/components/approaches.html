@@ -5,10 +5,10 @@
       {{ with .traditional }}
         <div class="col-lg-6 mb-5 mb-lg-0">
           <div class="alert alert-danger p-5">
-            <h3 class="titillium-web-bold">{{ .heading }}</h3>
+            <h3 class="titillium-web-bold mt-n2 mb-4">{{ .heading }}</h3>
             <ul class="list-unstyled mb-0">
               {{ range .items }}
-                <li>{{ . }}</li>
+                <li class="d-flex"><span class="fa-solid fa-square-check text-danger position-relative me-2" style="top: 4px;"></span><span>{{ . }}</span></li>
               {{ end }}
             </ul>
           </div>
@@ -17,10 +17,10 @@
       {{ with .sentinel }}
         <div class="col-lg-6">
           <div class="alert alert-success p-5">
-            <h3 class="titillium-web-bold">{{ .heading }}</h3>
+            <h3 class="titillium-web-bold mt-n2 mb-4">{{ .heading }}</h3>
             <ul class="list-unstyled mb-0">
               {{ range .items }}
-                <li>{{ . }}</li>
+                <li class="d-flex"><span class="fa-solid fa-square-check text-success position-relative me-2" style="top: 4px;"></span><span>{{ . }}</span></li>
               {{ end }}
             </ul>
           </div>

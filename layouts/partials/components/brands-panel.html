@@ -2,7 +2,7 @@
   <div class="container">
     <div class="py-5 py-lg-6 px-5 px-lg-6 px-xl-7 border border-2 border-dark">
       <div class="text-center mt-n6 mb-6">
-        <h2 class="px-4 bg-white d-inline-block titillium-web-bold mt-n5">{{ .heading }}</h2>
+        <h2 class="px-4 bg-white d-inline-block titillium-web-bold mt-n6">{{ .heading }}</h2>
       </div>
       {{ with site.Data.brands }}
         <div class="row gx-5">
@@ -20,7 +20,7 @@
             {{ if and $image (ne $image.MediaType.SubType "svg") }}
               {{ $src = ($image.Fit (printf "%dx%d webp" 800 450)).RelPermalink }}
             {{ end }}
-            <div class="col-6 col-lg-4 col-xl-3 col-xxl-2 mb-5">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-5 d-flex align-items-center">
               <img class="img-fluid" src="{{ $src }}" alt="{{ .brand }} logo" />
             </div>
           {{ end }}

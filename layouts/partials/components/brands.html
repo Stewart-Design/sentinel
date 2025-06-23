@@ -1,20 +1,22 @@
-<section class="py-5">
-  <ul class="list-inline mb-n4">
-    {{ range . }}
-      {{ $src := .logo }}
-      {{ $image := "" }}
-      {{/*  Get the image, either from its remote or local source  */}}
-      {{ if hasPrefix $src "http"}}
-        {{ $image = resources.GetRemote $src }}
-      {{ else }}
-        {{ $image = resources.Get $src }}
+<section class="py-4">
+  <div class="marquee w-100">
+    <ul class="marquee-content">
+      {{ range . }}
+        {{ $src := .logo }}
+        {{ $image := "" }}
+        {{/*  Get the image, either from its remote or local source  */}}
+        {{ if hasPrefix $src "http"}}
+          {{ $image = resources.GetRemote $src }}
+        {{ else }}
+          {{ $image = resources.Get $src }}
+        {{ end }}
+    
+        {{/* Resize images and add them to a variable  */}}
+        {{ if and $image (ne $image.MediaType.SubType "svg") }}
+          {{ $src = ($image.Fit (printf "%dx%d webp" 150 80)).RelPermalink }}
+        {{ end }}
+        <li><img class="px-2" src="{{ $src }}" alt="{{ .brand }} logo" style="max-width: 150px;" /></li>
       {{ end }}
-  
-      {{/* Resize images and add them to a variable  */}}
-      {{ if and $image (ne $image.MediaType.SubType "svg") }}
-        {{ $src = ($image.Fit (printf "%dx%d webp" 200 100)).RelPermalink }}
-      {{ end }}
-      <li class="list-inline-item mb-4 px-3"><img class="img-fluid" src="{{ $src }}" alt="{{ .brand }} logo" /></li>
-    {{ end }}
-  </ul>
+    </ul>
+  </div>
 </section>

@@ -1,0 +1,145 @@
+<section class="py-6 mt-n5">
+  <div class="container">
+    <div class="row gx-xl-5">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        {{ with .get_in_touch }}
+          <h2 class="titillium-web-bold h1">{{ .heading }}</h2>
+          {{ with .visit_us }}
+            <h3 class="titillium-web-light mt-5 h4"><span class="fa-regular fa-location-dot me-2"></span>{{ .heading }}</h3>
+            {{ with .lines }}
+              <ul class="list-unstyled">
+                {{ range . }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          {{ end }}
+          {{ with .call_us }}
+            <h3 class="titillium-web-light mt-5 h4"><span class="fa-regular fa-phone me-2"></span>{{ .heading }}</h3>
+            <p><a href="tel:{{ .phone | urlize }}">{{ .phone }}</a></p>
+          {{ end }}
+          {{ with .email_us }}
+            <h3 class="titillium-web-light mt-5 h4"><span class="fa-regular fa-envelope me-2"></span>{{ .heading }}</h3>
+            <p><a href="mailto:{{ .email | urlize }}">{{ .email }}</a></p>
+          {{ end }}
+          {{ with .business_hours }}
+            <h3 class="titillium-web-light mt-5 h4"><span class="fa-regular fa-clock me-2"></span>{{ .heading }}</h3>
+            {{ with .hours }}
+              <ul class="list-unstyled">
+                {{ range . }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+            {{ with .emergency_text }}
+              <p><strong>{{ . }}</strong></p>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ with .roof_assessment }}
+          <div class="p-4 bg-light mt-5">
+            {{ with .heading }}
+              <h2 class="h3 titillium-web-bold">{{ . }}</h2>
+            {{ end }}
+            {{ with .text }}
+              <p>{{ . | markdownify }}</p>
+            {{ end }}
+            {{ if and .cta .url }}
+              <a class="btn btn-danger rounded-0" href="{{ .url }}">{{ .cta }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+        {{ with .emergency_service }}
+          <div class="p-4 bg-light mt-5">
+            {{ with .heading }}
+              <h2 class="h3 titillium-web-bold">{{ . }}</h2>
+            {{ end }}
+            {{ with .text }}
+              <p>{{ . | markdownify }}</p>
+            {{ end }}
+            {{ if and .cta .phone }}
+              <a class="btn btn-danger rounded-0" href="tel:{{ .phone | urlize }}">{{ .cta }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+      <div class="col-lg-6">
+        {{ with .message }}
+          {{ with .heading }}
+            <h2 class="titillium-web-bold mb-5 h1">{{ . }}</h2>
+          {{ end }}
+        {{ end }}
+        <form class="bg-light p-5" name="contact-new" action="/form-success" method="POST" data-netlify="true">
+          <input type="hidden" name="subject" data-remove-prefix value="Contact inquiry coveredbysentinel.com" />
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="firstnameInput" class="form-label"><strong>First Name</strong> <span class="text-danger"><sup>*</sup></span></label>
+                <input name="firstname" type="text" class="form-control" id="firstnameInput" required>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="lastnameInput" class="form-label"><strong>Last Name</strong> <span class="text-danger"><sup>*</sup></span></label>
+                <input name="lastname" type="text" class="form-control" id="lastnameInput" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">          
+              <div class="mb-3">
+                <label for="emailInput" class="form-label"><strong>Email Address</strong> <span class="text-danger"><sup>*</sup></span></label>
+                <input name="email" type="email" class="form-control" id="emailInput" required>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="phoneInput" class="form-label"><strong>Phone Number</strong> <span class="text-danger"><sup>*</sup></span></label>
+                <input name="phone" type="tel" class="form-control" id="phoneInput" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="companynameInput" class="form-label"><strong>Company Name</strong> <span class="text-danger"></span></label>
+                <input name="companyname" type="text" class="form-control" id="companynameInput">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <label for="propertyTypeInput" class="form-label"><strong>Property Type</strong> <span class="text-danger"></span></label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="roofsizeInput" class="form-label"><strong>Approximate Roof Size (sq ft.)</strong></label>
+                <input name="roofsize" type="text" class="form-control" id="roofsizeInput">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <label for="propertyTypeInput" class="form-label"><strong>Inquiry Type</strong></label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="orderInput" class="form-label"><strong>Message</strong> <span class="text-danger"><sup>*</sup></span></label>
+            <textarea name="message" class="form-control" id="orderInput" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-s-blue rounded-0 px-3">Contact</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
