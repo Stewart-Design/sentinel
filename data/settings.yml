@@ -24,7 +24,7 @@ site_menu:
     url: /services/
     sub_links:
       - menu_item: 24/7 Emergency Repairs
-        url: "tel:304-902-0659"
+        url: "/contact/#roof-emergency"
       - menu_item: Roof Maintenance
         url: /management/sentinel-smart
       - menu_item: Cost Savings Program

@@ -5,9 +5,7 @@
   {{ with .Params.table_panels }}
     {{ partial "components/table-panels" . }}
   {{ end }}
-  {{ with site.Data.testimonials }}
-    {{ partial "components/testimonials-static" . }}
-  {{ end }}
+  <!-- Testimonials -->
   {{ with .Params.dual_panels }}
     {{ partial "components/dual-panels" . }}
   {{ end }}

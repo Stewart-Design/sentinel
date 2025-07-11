@@ -37,7 +37,7 @@ management_featurettes:
       color: s-green
       copy: >-
         On a tight budget? For as little as $599 a year, get 100% of membership, repairs, and labor credited toward a future spray or full roof replacement up to $50,000.*
-      cta_text: Plans Starting at $599/year »
+      cta_text: Plans Starting at $599/year
       url: /management/sentinel-smart/
     - heading: SentinelShield&trade;
       subheading: 20-Year Materials and Labor Warranty for $0*
@@ -45,7 +45,7 @@ management_featurettes:
       color: dark
       copy: >-
         Rest easy with our industry-leading 20-year warranty, covering 100% of labor and materials, saving tens of thousands so you’re protected from the unexpected.*
-      cta_text: $0 for SentinelSmart Members »
+      cta_text: $0 for SentinelSmart Members
       url: /management/sentinel-shield/
 fine_print: true
 cta:

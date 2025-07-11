@@ -11,9 +11,7 @@
   {{ with site.Data.home.management_featurettes }}
     {{ partial "components/management-featurettes" . }}
   {{ end }}
-  {{ with site.Data.testimonials }}
-    {{ partial "components/testimonials-static" . }}
-  {{ end }}
+  <!-- Testimonials -->
   {{ with .Params.panels }}
     {{ partial "components/dual-panels" . }}
   {{ end }}
