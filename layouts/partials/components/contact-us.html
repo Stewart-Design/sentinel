@@ -69,7 +69,12 @@
             <h2 class="titillium-web-bold mb-5 h1">{{ . }}</h2>
           {{ end }}
         {{ end }}
-        <form class="bg-light p-5" name="contact-new" action="/form-success" method="POST" data-netlify="true">
+        <form class="bg-light p-5"
+          name="sentinel-contact-new"
+          action="/form-success"
+          method="POST"
+          data-netlify-recaptcha="true"
+          data-netlify="true">
           <input type="hidden" name="subject" data-remove-prefix value="Contact inquiry coveredbysentinel.com" />
           <div class="row">
             <div class="col-lg-6">

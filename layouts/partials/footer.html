@@ -70,7 +70,11 @@
               {{ with .items }}
                 <ul class="list-unstyled">
                   {{ range . }}
-                    <li><a class="text-white text-decoration-none" href="{{ .url }}">{{ .text }}</a></li>
+                    {{ if .url }}
+                      <li><a class="text-white text-decoration-none" href="{{ .url }}">{{ .text }}</a></li>
+                    {{ else }}
+                      <li>{{ .text }}</li>
+                    {{ end }}
                   {{ end }}
                 </ul>
               {{ end }}

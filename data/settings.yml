@@ -28,7 +28,7 @@ site_menu:
       - menu_item: Roof Maintenance
         url: /management/sentinel-smart
       - menu_item: Cost Savings Program
-        url: /management/sentinel-smart
+        url: /management/
       - menu_item: Spray Coating
         url: /management/sentinel-seal
       - menu_item: Structural Assessment

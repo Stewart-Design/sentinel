@@ -8,6 +8,9 @@
   {{ with .Params.intro }}
     {{ partial "components/management-intro" . }}
   {{ end }}
+  {{ with .Params.roof_maintenance }}
+    {{ partial "components/roof-maintenance" . }}
+  {{ end }}
   {{ with .Params.table_panels }}
     {{ partial "components/table-panels" . }}
   {{ end }}

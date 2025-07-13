@@ -1,6 +1,6 @@
 ---
 title: SentinelStrong&trade;
-subheading: Structural Assessments & Full Roof Replacements
+subheading: Structural Assessments & System Design
 background_image: /img/sentinel-shield-background.jpg
 intro_pre:
   heading:
@@ -9,6 +9,31 @@ intro_pre:
 
 
     We also utilize **drone-based thermal scans** to accurately detect **hidden water damage** and moisture infiltration beneath the roof surface—allowing us to create informed, cost-effective repair plans before roof failure occurs.
+
+
+    ## Structural Roofing Assessments
+
+    At Sentinel Industrial Roofing, we begin every project with a thorough **structural assessment** of the building to ensure it can support the roofing system long-term. We collaborate directly with **manufacturer engineers** to determine the optimal design—including the type and configuration of **insulation board**, the required **layering system**, and the most effective **single-ply waterproof membrane**. This ensures a durable, code-compliant installation tailored to the specific structural and thermal needs of your facility.
+
+
+    ## Roof Replacements
+    
+    At Sentinel Industrial Roofing, roof replacements begin with a **detailed assessment for RMS members**. If the existing roof is not eligible for a cost-saving **spray coating**, we move forward with a full replacement plan tailored to your building’s needs.
+
+
+    This includes **engineering the system** and specifying the correct **insulation R-value**, **layer configuration**, and **state code compliance**, along with selecting the most suitable **single-ply membrane** for your building type.
+
+    We prioritize:
+
+    - **Long-lasting warranties**
+
+    - **Low maintenance over time**
+
+    - **Energy Star®-rated roofing systems**
+
+
+    We understand the unique demands of different facilities—whether **manufacturing**, **residential complexes**, **restaurants**, or **high-traffic buildings**—and apply the best materials and designs for each. Our goal is simple: deliver the **right system** for the **right structure**, with maximum performance and efficiency.
+
 intro:
   heading: Time for an upgrade?
   text: >-

@@ -28,7 +28,7 @@ services:
     - text: Roof Maintenance Support
       url: /management/sentinel-smart/
     - text: Cost Savings Program
-      url: /management/sentinel-smart/
+      url: /management/
     - text: Spray Coating
       url: /management/sentinel-seal/
     - text: Structural Assessment
@@ -61,37 +61,27 @@ contact:
     - text: Schedule Assessment
       url: /contact/
     - text: Emergency Service
-      url: "tel:304-902-0659"
+      url: "/contact/#roof-emergency"
     - text: Find Us
       url: https://maps.app.goo.gl/28uFgf5HdhuJSUbe8
 service_areas:
   heading: Service Areas
   items:
-    - text: Pittsburgh, PA
+    - text: West Virginia
       url:
-    - text: Washington, PA
+    - text: Pennsylvania
       utl:
-    - text: Hershey, PA
+    - text: Ohio
       url:
-    - text: Morgantown, WV
+    - text: Tennessee
       url:
-    - text: Bridgeport, WV
+    - text: Kentucky
       url:
-    - text: Charleston, WV
+    - text: North Carolina
       url:
-    - text: Cleveland, OH
+    - text: Virginia
       url:
-    - text: Columbus, OH
+    - text: Maryland
       url:
-    - text: Nashville, TN
-      url:
-    - text: Knoxville, TN
-      url:
-    - text: Louisville, KY
-      url:
-    - text: Lexington, KY
-      url:
-    - text: Wilmington, NC
-      url:
-    - text: Charlotte, NC
+    - text: South Carolina
       url:

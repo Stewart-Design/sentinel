@@ -5,7 +5,7 @@ background_image: /img/sentinel-scan-background.jpg
 intro:
   heading: Stay Ahead of Costly Repairs
   text: >-
-    Tired of patching an old, leaky roof? We'll inspect it, make immediate repairs up to $1,000, and plan your comprehensive Roof Management System (RMS) all for just $599. This assessment delivers same-day fixes for urgent issues, a detailed roof health timeline, photo documentation, and a customized replacement timeline to save you up to $50,000 and headache.
+    Tired of patching an old, leaky roof? To help you get started at cost, we'll inspect your roof, make immediate repairs up to $1,000, and plan your comprehensive Roof Management System (RMS) all for an introductory cost of $599. This assessment delivers same-day fixes for urgent issues, a detailed roof health timeline, photo documentation, and a customized replacement timeline to save you up to $50,000 and headache.
   ctas:
     - text: Get Same-Day Repairs for $599 »
       url: /contact/

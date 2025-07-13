@@ -18,6 +18,31 @@ intro:
       url: /contact/
   icon: money-bill
   icon_color: s-green
+roof_maintenance:
+  heading: Roof Maintenance
+  text: >-
+    Studies consistently show that **proactive commercial roof maintenance** leads to significant cost savings compared to a reactive “fix-it-when-it-breaks” approach. Key findings include:
+  items:
+    - heading: Extended Roof Life
+      text: >-
+        Regular maintenance can extend a roof’s lifespan by **30–50%**, delaying costly full replacements by years or even decades.
+    - heading: Lower Repair Costs
+      text: >-
+        Small issues caught early (like cracked seams or clogged drains) cost far less to fix than major leaks, structural damage, or mold remediation.
+    - heading: Energy Efficiency
+      text: >-
+        Maintained roofs (especially cool roofs or those with reflective coatings) improve insulation and reduce HVAC costs by **5–15%**
+    - heading: Extended Roof Life
+      text: >-
+        Regular maintenance can extend a roof’s lifespan by **30–50%**, delaying costly full replacements by years or even decades.
+    - heading: Extended Roof Life
+      text: >-
+        Regular maintenance can extend a roof’s lifespan by **30–50%**, delaying costly full replacements by years or even decades.
+    - heading: Extended Roof Life
+      text: >-
+        Regular maintenance can extend a roof’s lifespan by **30–50%**, delaying costly full replacements by years or even decades.
+  conclusion: >-
+    Proactive commercial roof maintenance is a proven, cost-effective strategy that prevents expensive damage, protects assets, and preserves roof warranties. It's an investment—not an expense.
 calculator:
   heading: How Much You Could Save?
 dual_panels:
