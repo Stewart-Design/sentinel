@@ -34,7 +34,7 @@ management_featurettes:
       color: danger
       copy: >-
         Old or leaky roof? We’ll come out, repair what we can, and give you a one-page plan for future replacement to extend the life of your roof without breaking the bank.
-      cta_text: Get Same-Day Repairs for $299
+      cta_text: Get Same-Day Repairs for $599
       url: /management/sentinel-scan/
     - heading: SentinelSmart
       subheading: Make Your Money Work For You
@@ -51,7 +51,7 @@ management_featurettes:
       color: s-purple
       copy: >-
         Not ready to replace? If you’re eligible, you could extend your roof’s life by decades with spray coating for nearly half the cost of replacement.
-      cta_text: Get Same-Day Repairs for $299
+      cta_text: Get Same-Day Repairs for $599
       url: /management/sentinel-seal/
     - heading: SentinelStrong
       subheading: Protecting What’s Underneath

@@ -2,6 +2,10 @@
 title: Smart Roofing Solutions
 subheading: Commercial Roof Management Systems (RMS)
 background_image: /img/sentinel-shield-background.jpg
+about:
+  heading: About Sentinel Industrial Roofing
+  text: >-
+    Sentinel Industrial Roofing is a trusted name in commercial roofing, built on decades of hands-on experience. Owner **Nelson B. Sherrill** began his career in construction in **1999**, founding **Nelson B. Sherrill LLC General Contracting in 2014**. The company quickly became **Tucker County’s largest construction firm**, known for quality, reliability, and integrity. After relocating to **Morgantown, WV**, the company shifted its focus to the commercial roofing sector, evolving from **Morgantown Roofing Co.** into what is now **Sentinel Industrial Roofing**—a brand dedicated to protecting buildings with expert roofing systems backed by strong general contracting roots.
 company_intro:
   heading: You’re Completely Covered™
   text: >-

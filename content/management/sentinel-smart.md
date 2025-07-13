@@ -2,6 +2,13 @@
 title: SentinelSmart&trade;
 subheading: Maintenance and Cost-Savings Program
 background_image: /img/sentinel-smart-background.jpg
+intro_pre:
+  heading:
+  text: >-
+    At Sentinel Industrial Roofing, we offer Full RMS Members credit of all maintenance and repair costs when it’s time for a full roof replacement or spray coating. This means your investment in regular upkeep not only protects your building—but also helps offset future roofing costs.
+
+
+    While excessive patching of large roof sections won’t qualify for full reimbursement, reasonable, documented maintenance will be credited back—rewarding proactive care and smart asset management. This credit will be assessed and aggreed on before membership signatures on a case-by-case basis, as all roofs are unique.
 intro:
   heading: Make Your Money Work for You
   text: >-

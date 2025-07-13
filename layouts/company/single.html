@@ -1,4 +1,7 @@
 {{ define "main" }}
+  {{ with .Params.about }}
+    {{ partial "components/about" . }}
+  {{ end }}
   {{ with .Params.company_intro }}
     {{ partial "components/company-intro" . }}
   {{ end }}

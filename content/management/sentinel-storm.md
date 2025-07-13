@@ -1,7 +1,14 @@
 ---
 title: SentinelStorm&trade;
-subheading: Damage Assessment & Insurance Claim Assistance
+subheading: Insurance Claim Roofing Experts
 background_image: /img/sentinel-shield-background.jpg
+intro_pre:
+  heading:
+  text: >-
+    Sentinel Industrial Roofing has **in-house public adjusters** who specialize in helping you get the most from your insurance company when a claim is filed. We handle **all insurance paperwork and proposals**, guiding you through the process and often securing **full roof replacements**, even when the damage appears minimal. Small issues may qualify as **structural changes**, making you eligible for a new roof under your policy.
+
+
+    For **emergency situations**, our **Sentinel RMS members** benefit from fast, turnkey service—your roof is already on file, allowing us to act quickly with no delays.
 intro:
   heading: Don’t think your insurance will help after a storm?
   text: >-

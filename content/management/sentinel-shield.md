@@ -5,9 +5,12 @@ background_image: /img/sentinel-shield-background.jpg
 intro:
   heading: Never Think About Your Roof Again
   text: >-
-    Time to replace your roof? Rest easy with SENTINEL's industry-leading 20-year warranty. While most property owners face anxiety over unexpected repairs and hidden costs, our comprehensive coverage protects your investment and your peace of mind. Stop worrying about the next storm or leak and start focusing on what really matters—your business operations. With SentinelShield, you're saving tens of thousands while gaining the confidence that comes with total protection from the unexpected.*
+    Time to replace your roof? Rest easy with SENTINEL's industry-leading 20-year warranty. While most property owners face anxiety over unexpected repairs and hidden costs, our comprehensive coverage protects your investment and your peace of mind. Stop worrying about the next storm or leak and start focusing on what really matters—your business operations. With SentinelShield, you're saving tens of thousands while gaining the confidence that comes with total protection from the unexpected.
+    
+    
+    You will be **covered 100%** if any roof failure is due to the product or installation. Just make **one phone call with one phone number**, and we will deal with any issues ASAP.*
   ctas:
-    - text: Get Same-Day Repairs for $299 »
+    - text: Get Same-Day Repairs for $599 »
       url: /contact/
   icon: shield-check
   icon_color: dark

@@ -2,6 +2,19 @@
 title: SentinelSeal&trade;
 subheading: Extend Roof Life for a Fraction of the Cost With Spray Coating
 background_image: /img/sentinel-shield-background.jpg
+intro_triptych:
+  heading:
+  text: >-
+    Flat roofs can often be restored with a **spray-applied coating system**, but only if the owner acts **before major damage occurs**. This solution is ideal for roofs that are still structurally sound but starting to show signs of wear.
+  panels:
+    - heading: Cost Savings
+      subheading: Roof coatings can save **40–60%** compared to full tear-off and replacement.
+      color:
+    - heading: Warranty
+      subheading: Most systems come with a **20-year manufacturer warranty**, offering long-term peace of mind.
+    - heading: Timing is Critical
+      subheading: Coating is only an option if applied **before leaks or deterioration become severe**. Waiting too long eliminates this cost-effective option.
+  conclusion: For flat roof owners who act early, spray coatings provide a high-performance, long-lasting, and budget-friendly alternative to replacement.
 intro:
   heading: Dreading the financial burden of a full roof replacement?
   text: >-

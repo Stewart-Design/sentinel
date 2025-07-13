@@ -2,6 +2,13 @@
 title: SentinelStrong&trade;
 subheading: Structural Assessments & Full Roof Replacements
 background_image: /img/sentinel-shield-background.jpg
+intro_pre:
+  heading:
+  text: >-
+    It’s always better to work with a commercial roofing company that also has **general contracting experience**—especially when structural assessments or repairs may be needed. Sentinel Industrial Roofing is a licensed General Contracting Company with experience dating back to **2014**. We understand the critical importance of ensuring your structure is sound **before** installing a new roof. From framing repairs to substrate reinforcement, we have the expertise to identify and address underlying issues—saving time, reducing risk, and ensuring your new roofing system is properly supported for long-term performance.
+
+
+    We also utilize **drone-based thermal scans** to accurately detect **hidden water damage** and moisture infiltration beneath the roof surface—allowing us to create informed, cost-effective repair plans before roof failure occurs.
 intro:
   heading: Time for an upgrade?
   text: >-
