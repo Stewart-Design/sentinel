@@ -32,9 +32,9 @@ site_menu:
       - menu_item: Spray Coating
         url: /management/sentinel-seal
       - menu_item: Structural Assessment
-        url: /management/sentinel-strong
+        url: /management/sentinel-strong/#structural-roofing-assessments
       - menu_item: Roof Replacements
-        url: /management/sentinel-strong
+        url: /management/sentinel-strong/#roof-replacements
   - menu_item: Contact
     url: /contact/
     sub_links:

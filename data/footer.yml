@@ -32,9 +32,9 @@ services:
     - text: Spray Coating
       url: /management/sentinel-seal/
     - text: Structural Assessment
-      url: /management/sentinel-strong/
+      url: /management/sentinel-strong/#structural-roofing-assessments
     - text: Roof Replacements
-      url: /management/sentinel-strong/
+      url: /management/sentinel-strong/#roof-replacements
 markets:
   heading: Markets
   items:
