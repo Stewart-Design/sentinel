@@ -14,7 +14,7 @@ intro:
   text: >-
     On a tight budget? A single emergency service call costs hundreds, even thousands alone–plus labor and materials. And the money you spend is gone. For less than a single emergency call, get 100% of membership, repairs, and labor credited toward a future spray or replacement up to $50,000*.
   ctas:
-    - text: Plans Starting at $599/year »
+    - text: Plans Starting at $899/year »
       url: /contact/
   icon: money-bill
   icon_color: s-green
