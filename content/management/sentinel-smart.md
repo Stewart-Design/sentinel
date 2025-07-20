@@ -31,16 +31,13 @@ roof_maintenance:
         Small issues caught early (like cracked seams or clogged drains) cost far less to fix than major leaks, structural damage, or mold remediation.
     - heading: Energy Efficiency
       text: >-
-        Maintained roofs (especially cool roofs or those with reflective coatings) improve insulation and reduce HVAC costs by **5–15%**
-    - heading: Extended Roof Life
+        Maintained roofs (especially cool roofs or those with reflective coatings) improve insulation and reduce HVAC costs by **5–15% annually**.
+    - heading: Warranty Protection
       text: >-
-        Regular maintenance can extend a roof’s lifespan by **30–50%**, delaying costly full replacements by years or even decades.
-    - heading: Extended Roof Life
+        Many manufacturer warranties require documented routine maintenance; neglect can void coverage and shift all repair costs to the owner.
+    - heading: Fewer Business Disruptions
       text: >-
-        Regular maintenance can extend a roof’s lifespan by **30–50%**, delaying costly full replacements by years or even decades.
-    - heading: Extended Roof Life
-      text: >-
-        Regular maintenance can extend a roof’s lifespan by **30–50%**, delaying costly full replacements by years or even decades.
+        Preventative maintenance minimizes surprise leaks or closures, which could otherwise cost thousands in lost productivity or emergency response.
   conclusion: >-
     Proactive commercial roof maintenance is a proven, cost-effective strategy that prevents expensive damage, protects assets, and preserves roof warranties. It's an investment—not an expense.
 calculator:
@@ -67,36 +64,24 @@ triptych:
     subheading: Basic coverage for newer roofs
     color:
     items:
-      - text: 1x visit per year
+      - text: $899 per inspection 1x visit per year
         subtext:
-      - text: $0 repairs same-day
-        subtext: (up to $1,000)*
-      - text: $999 emergency service
-        subtext: $1,499 value)*
       - text: 100% toward replacement
         subtext: (up to $50,000)*
   - heading: Semi-annual
     subheading: Better coverage for aging roofs
     color: bg-s-green text-white
     items:
-      - text: 2x visit per year
+      - text: $599 per inspection 2x visit per year
         subtext:
-      - text: $0 repairs same-day
-        subtext: (up to $1,000)*
-      - text: $5999 emergency service
-        subtext: ($1,499 value)*
       - text: 100% toward replacement
         subtext: (up to $50,000)*
   - heading: Quarterly
     subheading: Best coverage for end of roof life
     color:
     items:
-      - text: 4x visit per year
+      - text: $399 per inspection 4x visit per year
         subtext:
-      - text: $0 repairs same-day
-        subtext: (up to $1,000)*
-      - text: $0 emergency service
-        subtext: ($1,499 value)*
       - text: 100% toward replacement
         subtext: (up to $50,000)*
 fine_print: true
