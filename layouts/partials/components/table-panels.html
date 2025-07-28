@@ -1,0 +1,39 @@
+<section class="mb-6">
+  <div class="container">
+    <div class="row gx-5">
+      <div class="col-lg-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="bg-dark text-white titillium-web-bold small">Potential Expense</th>
+              <th class="bg-dark text-white titillium-web-bold small">Typical Cost*</th>
+              <th class="bg-dark text-white titillium-web-bold small">With SentinelShield&trade;</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range .items }}
+              <tr>
+                <td>{{ .expense }}</td>
+                <td>{{ .cost }}</td>
+                <td class="bg-dark text-white">$0 for Members*</td>
+              </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="titillium-web-bold mb-4 mt-3">{{ .heading }}</h2>
+        <div class="fs-5">
+          {{ .text | markdownify }}
+        </div>
+        {{ with .ctas }}
+          <div class="mt-4">
+            {{ range . }}
+              {{ partial "generic/button" (dict "classes" "btn-s-blue" "button" .) }}
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

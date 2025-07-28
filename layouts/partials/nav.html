@@ -1,48 +1,78 @@
 {{ $page := . }}
-<nav class="site-nav navbar navbar-expand-xl navbar-light bg-white">
-  <div class="w-100">
-    <div class="container position-relative bg-white">
-      <div class="px-xl-5 ms-xl-n5 me-xl-n5 bg-white">
-        <div class="row">
-          <div class="col-12 col-lg-4 d-flex align-items-lg-center">
-            <a class="navbar-brand d-inline-block py-lg-3 me-lg-0 ms-3 ms-md-0 lh-1" href="/">
-              <div class="d-flex">
-                <div class="me-2"><img src="/images/mark.webp" width="55px"></div>
-                <div class="position-relative" style="top: -2px;">
-                  <span class="d-block h4 mb-0 position-relative" style="left: -2px;"><strong>SENTINEL</strong></span>
-                  <span class="fs-6 text-uppercase small jgb-text-letter-spacing-wide d-block" style="font-size: .75rem !important;">Industrial Roofing</span>
+{{ with site.Data.settings }}
+  <nav class="site-nav pt-3 bg-s-blue w-100" style="z-index: 101;">
+    <div class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="w-100">
+        <div class="container position-relative bg-white">
+          <div class="px-xl-5 ms-xl-n5 me-xl-n5 bg-white">
+            <div class="row justify-content-between">
+              <div class="col-lg xorder-1 xorder-lg-2 mb-4 mb-lg-0">
+                <a class="navbar-brand d-inline-block" href="/">
+                  <div class="position-relative py-2" style="top: -2px;">
+                    <span class="d-block h4 mb-0 position-relative w-100 h-100"><img src="/images/mark.svg" width="160px" /><strong class="visually-hidden">SENTINEL Industrial Roofing</strong></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-2 col-lg d-flex align-items-center justify-content-end">
+                <div>
+                  <div class="xorder-lg-1 d-flex">
+                    <button class="navbar-toggler border-0 py-2 p-lg-0 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span> <span class="visually-hidden">Menu</span>
+                    </button>
+                  </div>
+                  <div class="collapse navbar-collapse xorder-lg-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0 me-4 me-lg-0 titillium-web-light">
+                      {{- with site.Data.settings.site_menu }}
+                        {{- range . }}
+                          <li class="nav-item {{ if .sub_links }}dropdown{{ end }}">
+                            {{ if not .sub_links }}
+                              <a class="btn nav-link text-dark p-2" href="{{ .url }}">{{ .menu_item }}</a>
+                            {{ else }}
+                              <button class="btn border-0 dropdown-toggle titillium-web-light p-2" style="line-height: inherit; font-size: inherit;" data-bs-toggle="dropdown" aria-expanded="false">
+                                {{ .menu_item }}
+                              </button>
+                              <ul class="dropdown-menu">
+                                {{ range .sub_links }}
+                                  <li><a class="dropdown-item" href="{{ .url }}">{{ .menu_item | safeHTML }}</a></li>
+                                {{ end }}
+                              </ul>
+                            {{ end }}
+                          </li>
+                        {{- end }}
+                      {{ end }}
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </a>
-          </div>
-          <div class="col-6 d-lg-flex align-items-lg-center justify-content-center">
-            <div class="d-flex flex-column flex-lg-row justify-content-start">
-              <div class="order-lg-1 d-flex">
-                <button class="navbar-toggler border-0 py-2 p-lg-0 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span> <span class="visually-hidden">Menu</span>
-                </button>
-                <!--
-                <button class="bg-transparent border-0 p-2 order-lg-1"><span class="fa-solid fa-magnifying-glass"></span><span class="visually-hidden">Search</span></button>
-                -->
-              </div>
-              <div class="collapse navbar-collapse order-lg-0" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 me-4 me-lg-0 small">
-                  {{- with site.Data.settings.site_menu }}
-                    {{- range . }}
-                      <li class="nav-item">
-                        <a class="nav-link text-dark p-2 border-top border-1 {{ if eq .menu_item $page.Title }}border-red{{ else }}border-white{{ end }}" href="{{ .url }}">{{ .menu_item }}</a>
-                      </li>
-                    {{- end }}
-                  {{ end }}
-                </ul>
+              <div class="col-4 col-lg-3 col-xxl-2 d-flex align-items-center justify-content-end xorder-3">
+                <a class="btn btn-s-blue btn-sm rounded-0 ms-xl-5" href="{{ .quote_link }}">Request a Quote</a>
               </div>
             </div>
-          </div>
-          <div class="col-6 col-lg-2 text-end d-flex align-items-lg-center justify-content-end">
-            <p class="py-2 mb-0"><a class="btn btn-red rounded-pill px-3" href="tel:{{ site.Data.settings.phone }}">{{ site.Data.settings.phone | urlize }}</a></p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</nav>
+    <div class="d-lg-none collapse navbar-collapse xorder-lg-0 bg-white" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 me-4 me-lg-0 titillium-web-light">
+        {{- with site.Data.settings.site_menu }}
+          {{- range . }}
+            <li class="nav-item {{ if .sub_links }}dropdown{{ end }} text-start">
+              {{ if not .sub_links }}
+                <a class="btn nav-link text-start text-dark p-2" href="{{ .url }}">{{ .menu_item }}</a>
+              {{ else }}
+                <button class="btn border-0 dropdown-toggle titillium-web-light p-2" style="line-height: inherit; font-size: inherit;" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{ .menu_item }}
+                </button>
+                <ul class="dropdown-menu w-100">
+                  {{ range .sub_links }}
+                    <li><a class="dropdown-item" href="{{ .url }}">{{ .menu_item | safeHTML }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </li>
+          {{- end }}
+        {{ end }}
+      </ul>
+    </div>
+  </nav>
+{{ end }}

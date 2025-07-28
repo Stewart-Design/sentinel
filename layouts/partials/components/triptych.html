@@ -1,0 +1,26 @@
+{{ $color := "" }}
+<section class="mb-6">
+  <div class="container">
+    <div class="row">
+      {{ range . }}
+        {{ $color = "bg-light" }}
+        {{ if .color }}
+          {{ $color = .color }}
+        {{ end }}
+        <div class="col-lg-4">
+          <div class="p-4 {{ $color }} h-100">
+            <h2 class="h1 titillium-web-bold mb-0">{{ .heading }}</h2>
+            {{ with .subheading }}
+              <p class="titillium-web-bold fs-4">{{ . }}</p>
+            {{ end }}
+            <ul class="list-unstyled">
+              {{ range .items }}
+                <li class="d-flex"><span class="me-1">&raquo;</span><span class="d-block">{{ .text }} <span class="small">{{ .subtext }}</span></span></li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

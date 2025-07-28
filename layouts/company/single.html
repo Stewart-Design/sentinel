@@ -1,0 +1,32 @@
+{{ define "main" }}
+  {{ with .Params.about }}
+    {{ partial "components/about" . }}
+  {{ end }}
+  {{ with .Params.company_intro }}
+    {{ partial "components/company-intro" . }}
+  {{ end }}
+  {{ with .Params.mission }}
+    {{ partial "components/mission" . }}
+  {{ end }}
+  {{ with .Params.roof_risk }}
+    {{ partial "components/roof-risk" . }}
+  {{ end }}
+  {{ with site.Data.home.management_featurettes }}
+    {{ partial "components/management-featurettes" . }}
+  {{ end }}
+  <!-- Testimonials -->
+  {{ with .Params.panels }}
+    {{ partial "components/dual-panels" . }}
+  {{ end }}
+  {{ if .Params.fine_print }}
+    {{ with site.Data.settings.fine_print }}
+      {{ partial "components/fine-print" . }}
+    {{ end }}
+  {{ end }}
+  {{ with .Params.brands }}
+    {{ partial "components/brands-panel" . }}
+  {{ end }}
+  {{ with .Params.cta }}
+    {{ partial "components/cta" . }}
+  {{ end }}
+{{ end }}

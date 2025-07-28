@@ -1,0 +1,104 @@
+hero:
+  heading: "What if you were Completely Covered?&trade;"
+  subheading: You never think about your roof. Let’s keep it that way.
+  image: /img/rooftop-birdseye.jpg
+  ctas:
+    - text: Schedule Assessment
+      url: /contact/
+      color: s-blue
+    - text: Emergency Service
+      url: tel:304-902-0659
+      color: danger
+logos:
+  - image:
+    brand: GAF
+  - image:
+    brand: IKO Commercial
+featurette:
+  heading: Your Guardian Overhead
+  subheading: >-
+    Your roof is more than a covering; it’s the guardian that protects everything
+    underneath it–your people, products, equipment, customer experience,
+    and daily operations.
+  ctas:
+    - text: Our Mission
+      url: /company/#mission
+  image: /img/guardian-overhead.jpg
+  image_alt: Worker on roof
+management_featurettes:
+  heading: SENTINEL Roof Management System (RMS)
+  items:
+    - heading: SentinelScan
+      subheading: Stay Ahead of Costly Repairs
+      icon: triangle-exclamation
+      color: danger
+      copy: >-
+        Old or leaky roof? We’ll come out, repair what we can, and give you a one-page plan for future replacement to extend the life of your roof without breaking the bank.
+      cta_text: Get Same-Day Repairs for $599
+      url: /management/sentinel-scan/
+    - heading: SentinelSmart
+      subheading: Make Your Money Work For You
+      icon: money-bill
+      color: s-green
+      copy: >-
+        On a tight budget? For as little as $599 a year, get 100% of membership, repairs, and labor credited toward a future spray
+        or full roof replacement up to $50,000.*
+      cta_text: Plans Starting at $599/year
+      url: /management/sentinel-smart/
+    - heading: SentinelSeal
+      subheading: Extend Roof Life for a Fraction of the Cost
+      icon: ball-pile
+      color: s-purple
+      copy: >-
+        Not ready to replace? If you’re eligible, you could extend your roof’s life by decades with spray coating for nearly half the cost of replacement.
+      cta_text: Get Same-Day Repairs for $599
+      url: /management/sentinel-seal/
+    - heading: SentinelStrong
+      subheading: Protecting What’s Underneath
+      icon: arrows-rotate-reverse
+      color: s-blue
+      copy: >-
+        Time for an upgrade? When the time is right, we’ll provide a full structural assessment, repair as needed, and replace to last a lifetime. Plus an industry leading 20-year warranty.
+      cta_text: Replacement Starting as Low as $10/sqft
+      url: /management/sentinel-strong/
+    - heading: SentinelShield
+      subheading: Never Think About Your Roof Again
+      icon: shield-check
+      color: dark
+      copy: >-
+        Rest easy with our industry-leading 20-year warranty, covering 100% of labor and materials, saving tens of thousands so you’re protected from the unexpected.
+      cta_text: $0 for SentinelSmart Members
+      url: /management/sentinel-shield/
+    - heading: SentinelStorm
+      subheading: Turn Hiidden Damage Into Full Coverage
+      icon: bolt
+      color: warning
+      copy: >-
+        Recent storm damage? Our experts identify qualifying issues that insurance often misses. We'll document everything needed to potentially secure a full replacement at little to no cost to you.
+      cta_text: Schedule FREE Storm Assessment
+      url: /management/sentinel-storm/
+approaches:
+  heading: It may be your first leak, but it won’t be your last...
+  traditional:
+    heading: Traditional Approach
+    items:
+      - Wait for leaks to appear
+      - Make expensive emergency repairs
+      - Patch repeatedly until it’s too late
+      - Face unexpexted six-figure replacement costs
+      - Delay strategic business investments to pay for a new roof
+  sentinel:
+    heading: SENTINEL Roof Management System
+    items:
+      - Comprehensive assessment to establish baseline
+      - Address small issues before they become major problems
+      - Regular maintenance that pays toward future replacement
+      - Extended roof lifespan through proper care
+      - Budget for replacement with no surprise expenses
+cta:
+  heading: Never Think About Your Roof Again
+  text: >-
+    With over 25 years of guaranteed contracting experience under our belt, we understand not just what’s overhead but also what’s underneath. Old or leaky roof? Get started with a SentinelScan assessment today.
+  ctas:
+    - text: Schedule Assessment
+      url:

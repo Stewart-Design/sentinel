@@ -1,18 +1,87 @@
-
-{{ with site.Data.footer }}
-  <footer id="footer" class="py-6 bg-s-blue text-white">
-    <div class="container-fluid small">
-      <div class="row">
-        <div class="col-lg-4 d-lg-flex align-items-center mb-4 mb-lg-0">
-          <p class="mb-1 ps-xl-5">&copy; {{ now.Year }} SENTINEL Industrial Roofing. All rights reserved.</p>
-        </div>
-        <div class="col-lg-4 d-lg-flex justify-content-center align-items-center mb-4 mb-lg-0">
-          <p class="titillium-web-bold h5">Completely Covered<sup>™</sup></p>
-        </div>
-        <div class="col-lg-4 d-lg-flex justify-content-end align-items-center">
-          <p class="pe-xxl-5"><a class="text-white text-decoration-none" href="mailto:{{ .email }}">{{ .email }}</a></p>          
+<footer id="footer" class="py-6 bg-dark text-white">
+  <div class="container">
+    <div class="row gx-lg-6">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        {{ with .heading }}
+          <h2 class="titillium-web-bold h4">{{ . | safeHTML }}</h2>
+        {{ end }}
+        {{ with .intro }}
+          <p>{{ . }}</p>
+        {{ end }}
+        <p class="mt-5 small">&copy; {{ now.Year }} {{ .copyright }}</p>
+        {{ with .credits }}
+          <p class="small">{{ . }}</p>
+        {{ end }}
+        {{ with .map_embed }}
+          <div class="mt-5">
+            {{ . | safeHTML }}
+          </div>
+        {{ end }}
+      </div>
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            {{ with .management }}
+              <h2 class="titillium-web-bold h4">{{ .heading }}</h2>
+              {{ with .items }}
+                <ul class="list-unstyled mb-0">
+                  {{ range . }}
+                    <li><a class="text-white text-decoration-none" href="{{ .url }}">{{ .text | safeHTML }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+            {{ with .company }}
+              <h2 class="titillium-web-bold h4 mt-4">{{ .heading }}</h2>
+              {{ with .items }}
+                <ul class="list-unstyled mb-0">
+                  {{ range . }}
+                    <li><a class="text-white text-decoration-none" href="{{ .url }}">{{ .text | safeHTML }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="col-lg-4 mb-4">
+            {{ with .contact }}
+              <h2 class="titillium-web-bold h4">{{ .heading }}</h2>
+              {{ with .items }}
+                <ul class="list-unstyled mb-0">
+                  {{ range . }}
+                    <li><a class="text-white text-decoration-none" href="{{ .url }}">{{ .text | safeHTML }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+            {{ with .services }}
+              <h2 class="titillium-web-bold h4 mt-4">{{ .heading }}</h2>
+              {{ with .items }}
+                <ul class="list-unstyled mb-0">
+                  {{ range . }}
+                    <li><a class="text-white text-decoration-none" href="{{ .url }}">{{ .text | safeHTML }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="col-lg-4">
+            {{ with .service_areas }}
+              <h2 class="titillium-web-bold h4">{{ .heading }}</h2>
+              {{ with .items }}
+                <ul class="list-unstyled">
+                  {{ range . }}
+                    {{ if .url }}
+                      <li><a class="text-white text-decoration-none" href="{{ .url }}">{{ .text }}</a></li>
+                    {{ else }}
+                      <li>{{ .text }}</li>
+                    {{ end }}
+                  {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          </div>
         </div>
       </div>
     </div>
-  </footer>
-{{ end }}
+  </div>
+</footer>

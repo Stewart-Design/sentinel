@@ -1,0 +1,33 @@
+<section class="mb-6">
+  <div class="container">
+    <div class="row gx-5 gx-xl-5 mb-lg-n5">
+      {{ range . }}
+        <div class="col-lg-6 mb-5">
+          {{ $src := .image }}
+          {{ $color := .color }}
+          {{ if .image }}
+            {{ $image := "" }}
+            {{/*  Get the image, either from its remote or local source  */}}
+            {{ if hasPrefix $src "http"}}
+              {{ $image = resources.GetRemote $src }}
+            {{ else }}
+              {{ $image = resources.Get $src }}
+            {{ end }}
+        
+            {{/* Resize images and add them to a variable  */}}
+            {{ if and $image (ne $image.MediaType.SubType "svg") }}
+              {{ $src = ($image.Fill (printf "%dx%d webp" 800 400)).RelPermalink }}
+            {{ end }}
+          {{ end }}
+          <img class="img-fluid mb-3" src="{{ $src }}" alt="" />      
+          <h2 class="titillium-web-bold mb-3">{{ .heading | safeHTML }}</h2>
+          <ul class="list-unstyled fs-5">
+            {{ range .items }}
+              <li class="mb-2 d-flex ps-4 position-relative"><span class="fa-solid fa-square-check text-{{ $color }} position-absolute" style="left: 0; top: 4px;"></span> {{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

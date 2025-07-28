@@ -1,5 +1,11 @@
 {{ define "main" }}
 
-  {{ partial "components/splash_form" . }}
+  {{ partial "components/hero" site.Data.home.hero }}
+  {{ partial "components/brands" site.Data.brands }}
+  {{ partial "components/featurette" site.Data.home.featurette }}
+  {{ partial "components/management-featurettes" site.Data.home.management_featurettes }}
+  <!-- Testimonials -->
+  {{ partial "components/approaches" site.Data.home.approaches }}
+  {{ partial "components/cta" site.Data.home.cta }}
 
 {{ end }}

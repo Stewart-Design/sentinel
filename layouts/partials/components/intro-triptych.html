@@ -1,0 +1,35 @@
+{{ $color := "" }}
+<section class="mb-6">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-xl-9 me-xl-auto">
+        <div class="fs-4 titillium-web-light">
+          {{ .text | markdownify }}
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      {{ range .panels }}
+        {{ $color = "bg-light" }}
+        {{ if .color }}
+          {{ $color = .color }}
+        {{ end }}
+        <div class="col-lg-4">
+          <div class="p-5 {{ $color }} h-100">
+            <h2 class="h2 titillium-web-bold mb-3">{{ .heading }}</h2>
+            {{ with .subheading }}
+              <p class="titillium-web-light fs-5">{{ . | markdownify }}</p>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+    <div class="row mb-5">
+      <div class="col-xl-12 me-xl-auto">
+        <div class="fs-4 titillium-web-bold bg-s-purple text-white text-center p-5">
+          {{ .conclusion | markdownify }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

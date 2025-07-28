@@ -1,3 +1,19 @@
+@mixin s-bg-tint($s-tint-opacity, $is-important: $global-important) {
+  background-size: cover $is-important;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    opacity: $s-tint-opacity;
+    z-index: $s-z-index-vignetting;
+  }
+}
+
 .fg-bg-img {
   position: absolute;
   top : 0;
@@ -7,4 +23,12 @@
   width : 100%;
   height : 100%;
   object-fit: cover;
+}
+
+.s-bg-tint {
+  @include s-bg-tint($s-tint-opacity);
+}
+
+.s-bg-tint--10 {
+  @include s-bg-tint(.1);
 }

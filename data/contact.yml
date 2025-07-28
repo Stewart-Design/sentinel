@@ -1,0 +1,49 @@
+get_in_touch:
+  heading: Get in Touch
+  visit_us:
+    heading: Address
+    lines:
+      - 180 Chancery Row
+      - Morgantown, WV 26501
+  call_us:
+    heading: Call Us
+    phone: 304-902-0659
+  email_us:
+    heading: Email Us
+    email: burt@coveredbysentinel.com
+  business_hours:
+    heading: Business Hours
+    hours:
+      - 7am - 8pm
+      - 7 days a week
+    emergency_text: 24/7 Emergency Service Available
+message:
+  heading: Send Us a Message
+roof_assessment:
+  heading: FREE Roof Assessment
+  text: Schedule your no-obligation SentinelScam&trade; assessment (a $2,500 value) and get same-day repairs for active leaks.
+  cta: Schedule Now
+  url: "#send-message"
+emergency_service:
+  heading: Emergency Service
+  text: Experiencing an active leak? Our emergency response team is available 24/7.
+  cta: "Call Now: 304-902-0659"
+  phone: "304-902-0659"
+service_areas:
+  map_embed:
+  heading: We Proudly Serve These Areas
+  items:
+    - West Virginia
+    - Pennsylvania
+    - Ohio
+    - Tennessee
+    - Kentucky
+    - North Carolina
+    - Virginia
+    - Maryland
+    - South Carolina
+roof_emergency:
+  heading: Roof Emergency?
+  text: Don’t wait. Our emergency response team is available 24/7 to handle active leaks and prevent further damage to your property.
+  cta: "Emergency Service: 304-902-0659"
+  phone: "304-902-0659"

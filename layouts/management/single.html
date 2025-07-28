@@ -1,0 +1,35 @@
+{{ define "main" }}
+  {{ with .Params.intro_pre }}
+    {{ partial "components/intro-pre" . }}
+  {{ end }}
+  {{ with .Params.intro_triptych }}
+    {{ partial "components/intro-triptych" . }}
+  {{ end }}
+  {{ with .Params.intro }}
+    {{ partial "components/management-intro" . }}
+  {{ end }}
+  {{ with .Params.roof_maintenance }}
+    {{ partial "components/roof-maintenance" . }}
+  {{ end }}
+  {{ with .Params.table_panels }}
+    {{ partial "components/table-panels" . }}
+  {{ end }}
+  <!-- Testimonials -->
+  {{ with .Params.dual_panels }}
+    {{ partial "components/dual-panels" . }}
+  {{ end }}
+  {{ with .Params.triptych }}
+    {{ partial "components/triptych" . }}
+  {{ end }}
+  {{ with .Params.management_featurettes }}
+    {{ partial "components/management-featurettes-backpage" . }}
+  {{ end }}
+  {{ if .Params.fine_print }}
+    {{ with site.Data.settings.fine_print }}
+      {{ partial "components/fine-print" . }}
+    {{ end }}
+  {{ end }}
+  {{ with .Params.cta }}
+    {{ partial "components/cta" . }}
+  {{ end }}
+{{ end }}

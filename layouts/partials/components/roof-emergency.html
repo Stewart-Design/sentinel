@@ -1,0 +1,17 @@
+<section id="roof-emergency" class="py-6 bg-danger text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-lg-auto text-center">
+        {{ with .heading }}
+          <h2 class="titillium-web-bold h1 mb-4">{{ . }}</h2>
+        {{ end }}
+        {{ with .text }}
+          <p class="fs-5 mb-4">{{ . | markdownify }}</p>
+        {{ end }}
+        {{ if and .cta .phone }}
+          <a href="tel:{{ .phone | urlize }}" class="btn btn-lg btn-white rounded-0 text-danger">{{ .cta }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

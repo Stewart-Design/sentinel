@@ -1,0 +1,31 @@
+<section class="mb-6">
+  <div class="container">
+    <h2 class="titillium-web-bold display-4 text-center mb-5">{{ .heading }}</h2>
+    <div class="row gx-5">
+      {{ with .traditional }}
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="alert alert-danger p-5">
+            <h3 class="titillium-web-bold mt-n2 mb-4">{{ .heading }}</h3>
+            <ul class="list-unstyled mb-0">
+              {{ range .items }}
+                <li class="d-flex"><span class="fa-solid fa-square-check text-danger position-relative me-2" style="top: 4px;"></span><span>{{ . }}</span></li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      {{ end }}
+      {{ with .sentinel }}
+        <div class="col-lg-6">
+          <div class="alert alert-success p-5">
+            <h3 class="titillium-web-bold mt-n2 mb-4">{{ .heading }}</h3>
+            <ul class="list-unstyled mb-0">
+              {{ range .items }}
+                <li class="d-flex"><span class="fa-solid fa-square-check text-success position-relative me-2" style="top: 4px;"></span><span>{{ . }}</span></li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

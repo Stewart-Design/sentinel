@@ -1,0 +1,21 @@
+<section id="service-areas" class="py-6 bg-light">
+  <div class="container">
+    <div class="mb-5">
+      <img class="img-fluid" src="/images/us-map.png" alt="Map showing locations" />
+    </div>
+    <div class="row text-center">
+      <div class="col-lg-8 mx-lg-auto">
+        {{ with .heading }}
+          <h2 class="titillium-web-bold mb-4">{{ . }}</h2>
+        {{ end }}
+        <p class="text-uppercase titillium-web-light mb-4" style="letter-spacing: 3px;">All of:</p>
+        {{ with .items }}
+          {{ range . }}
+            <span class="border border-1 border-dark px-3 py-2 mb-3 mx-1 rounded-pill d-inline-block">{{ . }}</span>
+          {{ end }}
+        {{ end }}
+        <p class="titillium-web-light mt-4">And other states with corporate accounts</p>
+      </div>
+    </div>
+  </div>
+</section>

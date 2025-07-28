@@ -1,0 +1,38 @@
+<section class="mb-6">
+  <div class="container">
+    <div class="row gx-5 mb-n5">
+      {{ range .items }}
+        {{ $url := .url }}
+        <div class="col-lg-6 mb-5">
+          <div class="position-relative bg-light h-100">
+            <div class="row gx-0">
+              <div class="col-10 col-md-11">
+                <div class="px-4 pt-4">
+                  <h2 class="titillium-web-bold mb-0">{{ .heading | safeHTML }}<sup>&trade;</sup></h2>
+                  <p class="titillium-web-bold h5 mb-3">{{ .subheading }}</p>
+                </div>
+              </div>
+              <div class="col-2 col-md-1">
+                <div class="ratio ratio-1x1 bg-{{ .color }}">
+                  <div class="d-flex align-items-center justify-content-center h-100 w-100">
+                    {{ if eq .icon "ball-pile" }}
+                      <span class="fa-solid fa-{{ .icon }} text-white fs-3" style="transform: rotate(-90deg);"></span>
+                    {{ else }}
+                      <span class="fa-regular fa-{{ .icon }} text-white fs-3"></span>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-4 pb-4">
+              <p class="">{{ .copy | markdownify }}</p>
+              {{ with .cta_text }}
+                <strong><a class="text-decoration-none stretched-link text-dark" href="{{ $url }}">{{ . }} &raquo;</a></strong>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

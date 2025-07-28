@@ -19,4 +19,4 @@
   {{ $classes = .classes }}
 {{ end }}
 
-<a href="{{ $url }}" class="btn {{ $classes }} {{ $size }} rounded-pill px-3">{{ $text }}</a>
+<a href="{{ $url | safeURL }}" class="btn {{ $classes }} {{ with .button.color }}btn-{{ . }}{{ end }} {{ $size }} rounded-0 px-3 mb-1">{{ $text }}</a>
