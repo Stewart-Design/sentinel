@@ -38,7 +38,7 @@ table_panels:
       cost: $20,000-$50,000
 dual_panels:
   - heading: Other warranties letting you down?
-    image: /img/worker-on-roof.jpg
+    image: /img/sprayer.jpg
     image_alt: Worker on roof
     color: dark
     items:

@@ -34,7 +34,7 @@ roof_risk:
   ctas:
     - text: Schedule Roof Assessment
       url:
-  image: /img/man-on-roof-vertical.jpg
+  image: /img/sentinel-guy.jpg
   image_alt: Worker installing roof
 panels:
   - heading: Commercial Repairs & Replacements
