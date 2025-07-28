@@ -1,7 +1,7 @@
 ---
 title: SentinelSeal&trade;
 subheading: Extend Roof Life for a Fraction of the Cost With Spray Coating
-background_image: /img/sentinel-shield-background.jpg
+background_image: /img/commercial-roof.jpg
 intro_triptych:
   heading:
   text: >-
@@ -26,7 +26,7 @@ intro:
   icon_color: s-purple
 dual_panels:
   - heading: Why replace what can be saved?
-    image: /img/sentinel-scan-background.jpg
+    image: /img/spray-coating-1.jpg
     image_alt: Sealed roof
     color: s-purple
     items:
@@ -34,7 +34,7 @@ dual_panels:
       - Virtually the same coverage as a new roof for a fraction of the cost*
       - Reapply multiple coats to save even more without replacement
   - heading: You’re Completely Covered&trade;
-    image: /img/roofer.jpg
+    image: /img/spray-coating-2.jpg
     image_alt: Roofer installing shingles
     color: s-purple
     items:

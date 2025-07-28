@@ -1,7 +1,7 @@
 ---
 title: SentinelSmart&trade;
 subheading: Maintenance and Cost-Savings Program
-background_image: /img/sentinel-smart-background.jpg
+background_image: /img/roof-angle.jpg
 intro_pre:
   heading:
   text: >-

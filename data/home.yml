@@ -23,7 +23,7 @@ featurette:
   ctas:
     - text: Our Mission
       url: /company/#mission
-  image: /img/worker-on-roof.jpg
+  image: /img/guardian-overhead.jpg
   image_alt: Worker on roof
 management_featurettes:
   heading: SENTINEL Roof Management System (RMS)

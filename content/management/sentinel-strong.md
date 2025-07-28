@@ -45,7 +45,7 @@ intro:
   icon_color: s-blue
 dual_panels:
   - heading: What if your roof could last for a lifetime?
-    image: /img/roofer.jpg
+    image: /img/cutting.jpg
     image_alt: Roofer installing shingles
     color: s-blue
     items:
@@ -53,7 +53,7 @@ dual_panels:
       - Metal  (”Tin roofs”) » Grocery, Shopping Centers, Malls
       - Shingle » Apartments, Offices 
   - heading: You’re Completely Covered&trade;
-    image: /img/sentinel-smart-background.jpg
+    image: /img/spray-coating-3.jpg
     image_alt: Man installing roof
     color: s-blue
     items:
