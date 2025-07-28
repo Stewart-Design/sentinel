@@ -33,7 +33,7 @@ roof_risk:
     While other roofers patch problems, we get it right from day one—because the right roof is the roof that lasts. With SENTINEL, you'll be completely covered, so you never have to think about your roof again.
   ctas:
     - text: Schedule Roof Assessment
-      url:
+      url: /contact/
   image: /img/sentinel-guy.jpg
   image_alt: Worker installing roof
 panels:
