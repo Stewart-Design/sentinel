@@ -23,6 +23,8 @@ management:
 services:
   heading: Services
   items:
+    - text: Service Areas
+      url: "/service-areas/"
     - text: 24/7 Emergency Repairs
       url: "/contact/#roof-emergency"
     - text: Roof Maintenance Support
