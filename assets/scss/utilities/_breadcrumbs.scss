@@ -1,0 +1,8 @@
+.breadcrumb-slash {
+  &:before {
+    content: ' ';
+  }
+  &:after {
+    content: ' ';
+  }
+}
