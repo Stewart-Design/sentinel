@@ -17,7 +17,11 @@
   {{ $featuredImg = site.Data.settings.featured_image }}
 {{ end }}
 
-<meta name="description" content="{{ $description }}">
+{{ if eq .Params.type "service-areas" }}
+  <meta name="description" content="Sentinel Industrial Roofing is a trusted commercial roofing company with over 25 years of experience. Founder Nelson B. Sherrill began his construction career in 1999 and established Nelson B. Sherrill. After relocating to Morgantown, WV, the company shifted its focus to commercial roofing, evolving from Morgantown Roofing Co. into Sentinel Industrial Roofing. Today, Sentinel combines expert roofing systems with deep general contracting roots, delivering reliability, craftsmanship, and lasting protection for commercial buildings in {{ .Params.city }}, {{ .Params.state }} and beyond.">
+{{ else }}
+  <meta name="description" content="{{ $description }}">
+{{ end }}
 
 <meta name="twitter:card" content="{{ if $featuredImg }}summary_large_image{{else}}summary{{end}}">
 <meta name="twitter:title" content="{{ if eq $pageTitle "Home" }}{{ site.Title }}{{ else }}{{ $pageTitle }} &middot; {{ site.Title }}{{ end }}">

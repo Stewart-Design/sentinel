@@ -16,11 +16,12 @@
     {{ $src = ($image.Fit (printf "%dx%d webp" 1900 1080)).RelPermalink }}
   {{ end }}
 {{ end }}
-<header id="topper" class="pt-7 pb-4 bg-dark text-white mb-6 s-bg-tint" style="background-image: url('{{ $src }}'); background-size: cover; background-position: center;">
+
+<header id="topper" class="pt-7 pb-4 bg-dark text-white mb-6 s-bg-tint positoin-relative" style="background-image: url('{{ $src }}'); background-size: cover; background-position: center;">
+  {{ if not .IsHome }}
+    {{ partial "breadcrumbs" . }}
+  {{ end }}
   <div class="container s-z-index-content">
-    <!--
-    {{ partial "breadcrumbs.html" . }}
-     -->
     <h1 class="display-2 mb-0 titillium-web-bold mb-2">{{ .Title | safeHTML }}</h1>
     <p class="titillium-web-light h2">{{ .Params.subheading }}</p>
   </div>

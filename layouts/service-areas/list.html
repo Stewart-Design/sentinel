@@ -1,0 +1,58 @@
+{{ define "main" }}
+  <main class="py-6 mb-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 me-md-auto lh-lg mb-5 mb-md-0">
+          <h2>Ohio</h2>
+          <ul>
+            {{ range .Data.Pages }}
+              {{ if eq .Params.state "OH" }}
+                <li>
+                  <a href="{{.Permalink}}">{{ .Params.city }}, {{ .Params.state }}</a>
+                </li>
+              {{ end }}
+            {{ end }}
+          </ul>
+          <h2 class="mt-5">Pennsylvania</h2>
+          <ul>
+            {{ range .Data.Pages }}
+              {{ if eq .Params.state "PA" }}
+                <li>
+                  <a href="{{.Permalink}}">{{ .Params.city }}, {{ .Params.state }}</a>
+                </li>
+              {{ end }}
+            {{ end }}
+          </ul>
+          <h2 class="mt-5">Virginia</h2>
+          <ul>
+            {{ range .Data.Pages }}
+              {{ if eq .Params.state "VA" }}
+                <li>
+                  <a href="{{.Permalink}}">{{ .Params.city }}, {{ .Params.state }}</a>
+                </li>
+              {{ end }}
+            {{ end }}
+          </ul>
+          <h2 class="mt-5">West Virginia</h2>
+          <ul>
+            {{ range .Data.Pages }}
+              {{ if eq .Params.state "WV" }}
+                <li>
+                  <a href="{{.Permalink}}">{{ .Params.city }}, {{ .Params.state }}</a>
+                </li>
+              {{ end }}
+            {{ end }}
+          </ul>
+          <h2 class="mt-5">We Also Do Business In:</h2>
+          <ul>
+            <li>Kentucky</li>
+            <li>Maryland</li>
+            <li>North Carolina</li>
+            <li>South Carolina</li>
+            <li>Tennessee</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+{{ end }}

@@ -8,17 +8,17 @@ site_menu:
   - menu_item: Management
     url: /management/
     sub_links:
-      - menu_item: SentinelScan&trade;
+      - menu_item: "SentinelScan&trade;"
         url: /management/sentinel-scan
-      - menu_item: SentinelSmart&trade;
+      - menu_item: "SentinelSmart&trade;"
         url: /management/sentinel-smart
-      - menu_item: SentinelSeal&trade;
+      - menu_item: "SentinelSeal&trade;"
         url: /management/sentinel-seal
-      - menu_item: SentinelStrong&trade;
+      - menu_item: "SentinelStrong&trade;"
         url: /management/sentinel-strong
-      - menu_item: SentinelShield&trade;
+      - menu_item: "SentinelShield&trade;"
         url: /management/sentinel-shield
-      - menu_item: SentinelStorm&trade;
+      - menu_item: "SentinelStorm&trade;"
         url: /management/sentinel-storm
   - menu_item: Services
     url: /services/
@@ -35,6 +35,9 @@ site_menu:
         url: /management/sentinel-strong/#structural-roofing-assessments
       - menu_item: Roof Replacements
         url: /management/sentinel-strong/#roof-replacements
+  - menu_item: Service Areas
+    url: /service-areas/
+    sub_links:
   - menu_item: Contact
     url: /contact/
     sub_links:

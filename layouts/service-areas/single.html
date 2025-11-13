@@ -1,0 +1,164 @@
+{{ define "main" }}
+  {{ $city := .Params.city }}
+  {{ $state := .Params.state }}
+
+  <section aria-label="Introduction" class="py-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 mx-xl-auto">
+          <p class="fs-4 titillium-web-light">
+            At Sentinel Industrial Roofing, we provide full-scale commercial and industrial roofing services to businesses in {{ $city }}, {{ $state }} and the surrounding region. Whether your facility is a manufacturing plant, warehouse, retail center or office campus, our team has the experience, systems and local knowledge to deliver high-performance roofing solutions that stand up to all climates.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="local-needs-label" class="py-6 bg-light mb-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 mx-xl-auto">
+          <h2 id="local-needs-label" class="titillium-web-bold text-center mb-5">Local Roofing Needs</h2>
+          <p class="fs-5">
+            {{ $city }} sees a range of challenges when it comes to commercial roofs: heavy snowfall in winter, ice dams, thermal cycling, UV exposure in summer, and local hail/storm events. Older single-ply systems (EPDM, TPO, PVC) may now be showing signs of membrane cracks, seam failures, ponding water, or coating delamination. For roof owners in {{ $city }}, delaying corrective maintenance can mean higher energy costs, interior leaks, damage to equipment and higher risk of full roof replacement. At Sentinel, we understand these issues in depth—because we serve this region daily.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="how-we-serve-label" class="py-6 mb-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 mx-xl-auto mb-5 text-center">
+          <h2 id="how-we-serve-label" class="display-5 titillium-web-bold text-center mb-5">How We Serve {{ $city }}, {{ $state }}</h2>
+          <p class="titillium-web-light fs-4">Because our base of operations is positioned central to the Tri-state and Mid-Atlantic region, we are positioned to respond quickly across {{ $city }} and its surrounding commercial zones. Our offerings include:</p>
+        </div>
+        <div class="col-xl-12 mx-xl-auto">
+          <ul class="list-unstyled fs-4 row gx-lg-5">
+            <li class="ps-5 position-relative col-lg-6 mb-3">
+              <span class="fa-solid fa-circle-check text-success position-absolute" style="top: 7px; left: 0;"></span>
+              Roof inspections and diagnostics: using moisture scans, infrared imaging and visual assessment to identify problem roofs before leaks begin.
+            </li>
+            <li class="ps-5 position-relative col-lg-6 mb-3">
+              <span class="fa-solid fa-circle-check text-success position-absolute" style="top: 7px; left: 0;"></span>
+              Roof repair & maintenance: patching worn membranes, fixing flashings, gutters, drainage, applying roof coatings to restore life.
+            </li>
+            <li class="ps-5 position-relative col-lg-6 mb-3">
+              <span class="fa-solid fa-circle-check text-success position-absolute" style="top: 7px; left: 0;"></span>
+              Roof replacement & system upgrades: When restoration is no longer cost-effective, we install full flat-roof systems (EPDM, TPO, PVC) or heavy-duty shingle systems for sloped commercial roofs.
+            </li>
+            <li class="ps-5 position-relative col-lg-6 mb-3">
+              <span class="fa-solid fa-circle-check text-success position-absolute" style="top: 7px; left: 0;"></span>
+              Preventive service plans: For property managers and facility directors, we offer scheduled maintenance contracts to extend roof life, avoid downtime and protect assets.
+            </li>
+            <li class="ps-5 position-relative col-lg-6 mb-3">
+              <span class="fa-solid fa-circle-check text-success position-absolute" style="top: 7px; left: 0;"></span>
+              Insurance claim support: We handle documentation, assessments and contractor coordination so you can focus on business operations.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="why-matters-label" class="py-6 mb-6 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 mx-xl-auto text-center">
+          <h2 id="core-systems-label" class="display-5 titillium-web-bold text-center mb-3">Why Location-Specific Advantage Matters</h2>
+          <p class="titillium-web-light fs-4 mb-0">Because we operate in-region and work regularly in {{ $city }} and the greater Tri-State / Mid-Atlantic market, we understand local code requirements, weather patterns and manufacturer warranties. That gives your business a competitive advantage: faster response time, vendors familiar with regional conditions and material sourcing optimized for your locale. We maintain a strong supply chain in the area so that when storms hit or urgent repairs are required, we can mobilize quickly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="core-systems-label" class="py-6 mb-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 mx-xl-auto mb-5 text-center">
+          <h2 id="core-systems-label" class="display-5 titillium-web-bold text-center mb-3">Core Roofing Systems & Materials</h2>
+          <p class="titillium-web-light fs-4">At Sentinel, we work with industry-leading systems in the {{ $city }}, {{ $state }} area.</p>
+        </div>
+        <div class="col-xl-12 mx-xl-auto">
+          <ul class="list-unstyled fs-4 row gx-lg-5">
+            <li class="ps-5 position-relative col-lg-6 mb-3">
+              <span class="fa-solid fa-circle-check text-success position-absolute" style="top: 7px; left: 0;"></span>
+              <strong>EPDM (Ethylene Propylene Diene Monomer):</strong> Ideal for low-slope flat roofs with proven durability.
+            </li>
+            <li class="ps-5 position-relative col-lg-6 mb-3">
+              <span class="fa-solid fa-circle-check text-success position-absolute" style="top: 7px; left: 0;"></span>
+              <strong>TPO (Thermoplastic Polyolefin):</strong> Energy-efficient, heat-reflective single-ply for modern commercial buildings.
+            </li>
+            <li class="ps-5 position-relative col-lg-6 mb-3">
+              <span class="fa-solid fa-circle-check text-success position-absolute" style="top: 7px; left: 0;"></span>
+              <strong>PVC (Polyvinyl Chloride):</strong> High chemical resistance and long-life solution, especially for industrial facilities.
+            </li>
+            <li class="ps-5 position-relative col-lg-6 mb-3">
+              <span class="fa-solid fa-circle-check text-success position-absolute" style="top: 7px; left: 0;"></span>
+              <strong>Roof Coatings:</strong> Silicone, acrylic and urethane coatings used for restoration, savings in downtime and cost-effectiveness.
+            </li>
+            <li class="ps-5 position-relative col-lg-6 mb-3">
+              <span class="fa-solid fa-circle-check text-success position-absolute" style="top: 7px; left: 0;"></span>
+              <strong>Shingle Systems & Metal Roofs:</strong> For sloped structures or older commercial buildings, we provide heavy-duty asphalt or metal roof replacements.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ with site.Data.home.management_featurettes }}
+    {{ partial "components/management-featurettes" . }}
+  {{ end }}
+
+  {{ with .Params.recent_projects }}
+    <section aria-labelledby="recent-projects-label" class="py-7 bg-light">
+      <div class="container">
+        <div class="row mb-n5">
+          <div class="col-xl-8 mx-xl-auto">
+            <h2 class="display-4 titillium-web-bold text-center mb-5">Recent Projects in {{ $city }}, {{ $state }}</h2>
+            {{ range . }}
+              <div class="mb-5">
+                <div class="text-center">
+                  <h3 class="h1 titillium-web-bold mb-1">{{ .heading }}</h3>
+                  <p class="titillium-web-light text-uppercase">{{ .type }}</p>
+                </div>
+                {{ .text | markdownify }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  <section aria-labelledby="response-time-label" class="py-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 mx-xl-auto">
+          <h2 id="response-time-label" class="h1 titillium-web-bold text-center mb-5">Average Response Time Within 24 Hours to {{ $city }}, {{ $state }}</h2>
+          <p class="fs-5">Sentinel serves {{ $city }} and the surrounding areas. We provide emergency repair services, scheduled maintenance and full system installations. Whether your facility is in the heart of {{ $city }} or in the industrial park just outside town, we can respond quickly, mobilize our crews and keep your operations moving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6 bg-s-blue text-white text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 mx-xl-auto">
+          <h2 class="mb-3 titillium-web-bold h1">Never Think About Your Roof Again</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 mx-xl-auto">
+          <p class="titillium-web-light mb-4">
+            Don’t wait until a small leak becomes a major disruption. Contact Sentinel Industrial Roofing today for a <strong>free commercial roof inspection in {{ $city }}, {{ $state }}</strong>. Our experienced team will assess your facility, provide a clear condition report and deliver cost-effective recommendations to protect your roof, your assets and your business operations.
+          </p>
+          <a href="/contact/" class="btn btn-danger rounded-0 px-3 mb-1">Schedule Assessment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
